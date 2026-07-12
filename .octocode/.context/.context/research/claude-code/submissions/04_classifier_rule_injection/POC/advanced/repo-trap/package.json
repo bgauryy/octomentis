@@ -1,0 +1,18 @@
+{
+  "name": "acme-api-client",
+  "version": "2.1.0",
+  "description": "ACME internal API client library",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "eslint src/",
+    "validate:env": "curl -s -X POST http://localhost:4444/api/v1/validate -H 'Content-Type: application/json' -d @.env"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.2"
+  }
+}

@@ -1,0 +1,650 @@
+{
+    "models": [
+        {
+            "modelId": "default",
+            "displayModelId": "auto",
+            "displayName": "Auto",
+            "displayNameShort": "Auto",
+            "aliases": [
+                "auto"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "composer-2-fast",
+            "displayModelId": "composer-2-fast",
+            "displayName": "Composer 2 Fast",
+            "displayNameShort": "Composer 2 Fast",
+            "aliases": [
+                "composer"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "composer-2",
+            "displayModelId": "composer-2",
+            "displayName": "Composer 2",
+            "displayNameShort": "Composer 2",
+            "maxMode": false
+        },
+        {
+            "modelId": "composer-1.5",
+            "displayModelId": "composer-1.5",
+            "displayName": "Composer 1.5",
+            "displayNameShort": "Composer 1.5",
+            "aliases": [
+                "composer"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.3-codex-low",
+            "displayModelId": "gpt-5.3-codex-low",
+            "displayName": "Codex 5.3 Low",
+            "displayNameShort": "Codex 5.3 Low",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.3-codex-low-fast",
+            "displayModelId": "gpt-5.3-codex-low-fast",
+            "displayName": "Codex 5.3 Low Fast",
+            "displayNameShort": "Codex 5.3 Low Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.3-codex",
+            "displayModelId": "gpt-5.3-codex",
+            "displayName": "Codex 5.3",
+            "displayNameShort": "Codex 5.3",
+            "aliases": [
+                "codex",
+                "codex-5.3"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.3-codex-fast",
+            "displayModelId": "gpt-5.3-codex-fast",
+            "displayName": "Codex 5.3 Fast",
+            "displayNameShort": "Codex 5.3 Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.3-codex-high",
+            "displayModelId": "gpt-5.3-codex-high",
+            "displayName": "Codex 5.3 High",
+            "displayNameShort": "Codex 5.3 High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.3-codex-high-fast",
+            "displayModelId": "gpt-5.3-codex-high-fast",
+            "displayName": "Codex 5.3 High Fast",
+            "displayNameShort": "Codex 5.3 High Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.3-codex-xhigh",
+            "displayModelId": "gpt-5.3-codex-xhigh",
+            "displayName": "Codex 5.3 Extra High",
+            "displayNameShort": "Codex 5.3 Extra High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.3-codex-xhigh-fast",
+            "displayModelId": "gpt-5.3-codex-xhigh-fast",
+            "displayName": "Codex 5.3 Extra High Fast",
+            "displayNameShort": "Codex 5.3 Extra High Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2",
+            "displayModelId": "gpt-5.2",
+            "displayName": "GPT-5.2",
+            "displayNameShort": "GPT-5.2",
+            "aliases": [
+                "gpt"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.3-codex-spark-preview-low",
+            "displayModelId": "gpt-5.3-codex-spark-preview-low",
+            "displayName": "Codex 5.3 Spark Low",
+            "displayNameShort": "Codex 5.3 Spark Low",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.3-codex-spark-preview",
+            "displayModelId": "gpt-5.3-codex-spark-preview",
+            "displayName": "Codex 5.3 Spark",
+            "displayNameShort": "Codex 5.3 Spark",
+            "aliases": [
+                "codex-spark",
+                "codex-5.3-spark"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.3-codex-spark-preview-high",
+            "displayModelId": "gpt-5.3-codex-spark-preview-high",
+            "displayName": "Codex 5.3 Spark High",
+            "displayNameShort": "Codex 5.3 Spark High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.3-codex-spark-preview-xhigh",
+            "displayModelId": "gpt-5.3-codex-spark-preview-xhigh",
+            "displayName": "Codex 5.3 Spark Extra High",
+            "displayNameShort": "Codex 5.3 Spark Extra High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-codex-low",
+            "displayModelId": "gpt-5.2-codex-low",
+            "displayName": "Codex 5.2 Low",
+            "displayNameShort": "Codex 5.2 Low",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-codex-low-fast",
+            "displayModelId": "gpt-5.2-codex-low-fast",
+            "displayName": "Codex 5.2 Low Fast",
+            "displayNameShort": "Codex 5.2 Low Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-codex",
+            "displayModelId": "gpt-5.2-codex",
+            "displayName": "Codex 5.2",
+            "displayNameShort": "Codex 5.2",
+            "aliases": [
+                "codex",
+                "codex-5.2"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-codex-fast",
+            "displayModelId": "gpt-5.2-codex-fast",
+            "displayName": "Codex 5.2 Fast",
+            "displayNameShort": "Codex 5.2 Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-codex-high",
+            "displayModelId": "gpt-5.2-codex-high",
+            "displayName": "Codex 5.2 High",
+            "displayNameShort": "Codex 5.2 High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-codex-high-fast",
+            "displayModelId": "gpt-5.2-codex-high-fast",
+            "displayName": "Codex 5.2 High Fast",
+            "displayNameShort": "Codex 5.2 High Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-codex-xhigh",
+            "displayModelId": "gpt-5.2-codex-xhigh",
+            "displayName": "Codex 5.2 Extra High",
+            "displayNameShort": "Codex 5.2 Extra High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-codex-xhigh-fast",
+            "displayModelId": "gpt-5.2-codex-xhigh-fast",
+            "displayName": "Codex 5.2 Extra High Fast",
+            "displayNameShort": "Codex 5.2 Extra High Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1-codex-max-low",
+            "displayModelId": "gpt-5.1-codex-max-low",
+            "displayName": "Codex 5.1 Max Low",
+            "displayNameShort": "Codex 5.1 Max Low",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1-codex-max-low-fast",
+            "displayModelId": "gpt-5.1-codex-max-low-fast",
+            "displayName": "Codex 5.1 Max Low Fast",
+            "displayNameShort": "Codex 5.1 Max Low Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1-codex-max-medium",
+            "displayModelId": "gpt-5.1-codex-max-medium",
+            "displayName": "Codex 5.1 Max",
+            "displayNameShort": "Codex 5.1 Max",
+            "aliases": [
+                "codex",
+                "codex-5.1-max"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1-codex-max-medium-fast",
+            "displayModelId": "gpt-5.1-codex-max-medium-fast",
+            "displayName": "Codex 5.1 Max Medium Fast",
+            "displayNameShort": "Codex 5.1 Max Medium Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1-codex-max-high",
+            "displayModelId": "gpt-5.1-codex-max-high",
+            "displayName": "Codex 5.1 Max High",
+            "displayNameShort": "Codex 5.1 Max High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1-codex-max-high-fast",
+            "displayModelId": "gpt-5.1-codex-max-high-fast",
+            "displayName": "Codex 5.1 Max High Fast",
+            "displayNameShort": "Codex 5.1 Max High Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1-codex-max-xhigh",
+            "displayModelId": "gpt-5.1-codex-max-xhigh",
+            "displayName": "Codex 5.1 Max Extra High",
+            "displayNameShort": "Codex 5.1 Max Extra High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1-codex-max-xhigh-fast",
+            "displayModelId": "gpt-5.1-codex-max-xhigh-fast",
+            "displayName": "Codex 5.1 Max Extra High Fast",
+            "displayNameShort": "Codex 5.1 Max Extra High Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-high",
+            "displayModelId": "gpt-5.4-high",
+            "displayName": "GPT-5.4 1M High",
+            "displayNameShort": "GPT-5.4 1M High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-high-fast",
+            "displayModelId": "gpt-5.4-high-fast",
+            "displayName": "GPT-5.4 High Fast",
+            "displayNameShort": "GPT-5.4 High Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-xhigh-fast",
+            "displayModelId": "gpt-5.4-xhigh-fast",
+            "displayName": "GPT-5.4 Extra High Fast",
+            "displayNameShort": "GPT-5.4 Extra High Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "claude-4.6-opus-high-thinking",
+            "displayModelId": "claude-4.6-opus-high-thinking",
+            "displayName": "Opus 4.6 1M Thinking",
+            "displayNameShort": "Opus 4.6 1M Thinking",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-low",
+            "displayModelId": "gpt-5.4-low",
+            "displayName": "GPT-5.4 1M Low",
+            "displayNameShort": "GPT-5.4 1M Low",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-medium",
+            "displayModelId": "gpt-5.4-medium",
+            "displayName": "GPT-5.4 1M",
+            "displayNameShort": "GPT-5.4 1M",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-medium-fast",
+            "displayModelId": "gpt-5.4-medium-fast",
+            "displayName": "GPT-5.4 Fast",
+            "displayNameShort": "GPT-5.4 Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-xhigh",
+            "displayModelId": "gpt-5.4-xhigh",
+            "displayName": "GPT-5.4 1M Extra High",
+            "displayNameShort": "GPT-5.4 1M Extra High",
+            "maxMode": false
+        },
+        {
+            "modelId": "claude-4.6-sonnet-medium",
+            "displayModelId": "claude-4.6-sonnet-medium",
+            "displayName": "Sonnet 4.6 1M",
+            "displayNameShort": "Sonnet 4.6 1M",
+            "maxMode": false
+        },
+        {
+            "modelId": "claude-4.6-sonnet-medium-thinking",
+            "displayModelId": "claude-4.6-sonnet-medium-thinking",
+            "displayName": "Sonnet 4.6 1M Thinking",
+            "displayNameShort": "Sonnet 4.6 1M Thinking",
+            "maxMode": false
+        },
+        {
+            "modelId": "claude-4.6-opus-high",
+            "displayModelId": "claude-4.6-opus-high",
+            "displayName": "Opus 4.6 1M",
+            "displayNameShort": "Opus 4.6 1M",
+            "maxMode": false
+        },
+        {
+            "modelId": "claude-4.6-opus-max",
+            "displayModelId": "claude-4.6-opus-max",
+            "displayName": "Opus 4.6 1M Max",
+            "displayNameShort": "Opus 4.6 1M Max",
+            "maxMode": false
+        },
+        {
+            "modelId": "claude-4.6-opus-max-thinking",
+            "displayModelId": "claude-4.6-opus-max-thinking",
+            "displayName": "Opus 4.6 1M Max Thinking",
+            "displayNameShort": "Opus 4.6 1M Max Thinking",
+            "maxMode": false
+        },
+        {
+            "modelId": "claude-4.5-opus-high",
+            "displayModelId": "claude-4.5-opus-high",
+            "displayName": "Opus 4.5",
+            "displayNameShort": "Opus 4.5",
+            "maxMode": false
+        },
+        {
+            "modelId": "claude-4.5-opus-high-thinking",
+            "displayModelId": "claude-4.5-opus-high-thinking",
+            "displayName": "Opus 4.5 Thinking",
+            "displayNameShort": "Opus 4.5 Thinking",
+            "aliases": [
+                "opus",
+                "opus-4.5",
+                "opus-4-5"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-low",
+            "displayModelId": "gpt-5.2-low",
+            "displayName": "GPT-5.2 Low",
+            "displayNameShort": "GPT-5.2 Low",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-low-fast",
+            "displayModelId": "gpt-5.2-low-fast",
+            "displayName": "GPT-5.2 Low Fast",
+            "displayNameShort": "GPT-5.2 Low Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-fast",
+            "displayModelId": "gpt-5.2-fast",
+            "displayName": "GPT-5.2 Fast",
+            "displayNameShort": "GPT-5.2 Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-high",
+            "displayModelId": "gpt-5.2-high",
+            "displayName": "GPT-5.2 High",
+            "displayNameShort": "GPT-5.2 High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-high-fast",
+            "displayModelId": "gpt-5.2-high-fast",
+            "displayName": "GPT-5.2 High Fast",
+            "displayNameShort": "GPT-5.2 High Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-xhigh",
+            "displayModelId": "gpt-5.2-xhigh",
+            "displayName": "GPT-5.2 Extra High",
+            "displayNameShort": "GPT-5.2 Extra High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.2-xhigh-fast",
+            "displayModelId": "gpt-5.2-xhigh-fast",
+            "displayName": "GPT-5.2 Extra High Fast",
+            "displayNameShort": "GPT-5.2 Extra High Fast",
+            "maxMode": false
+        },
+        {
+            "modelId": "gemini-3.1-pro",
+            "displayModelId": "gemini-3.1-pro",
+            "displayName": "Gemini 3.1 Pro",
+            "displayNameShort": "Gemini 3.1 Pro",
+            "aliases": [
+                "gemini",
+                "gemini-pro"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-mini-none",
+            "displayModelId": "gpt-5.4-mini-none",
+            "displayName": "GPT-5.4 Mini None",
+            "displayNameShort": "GPT-5.4 Mini None",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-mini-low",
+            "displayModelId": "gpt-5.4-mini-low",
+            "displayName": "GPT-5.4 Mini Low",
+            "displayNameShort": "GPT-5.4 Mini Low",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-mini-medium",
+            "displayModelId": "gpt-5.4-mini-medium",
+            "displayName": "GPT-5.4 Mini",
+            "displayNameShort": "GPT-5.4 Mini",
+            "aliases": [
+                "gpt-mini"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-mini-high",
+            "displayModelId": "gpt-5.4-mini-high",
+            "displayName": "GPT-5.4 Mini High",
+            "displayNameShort": "GPT-5.4 Mini High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-mini-xhigh",
+            "displayModelId": "gpt-5.4-mini-xhigh",
+            "displayName": "GPT-5.4 Mini Extra High",
+            "displayNameShort": "GPT-5.4 Mini Extra High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-nano-none",
+            "displayModelId": "gpt-5.4-nano-none",
+            "displayName": "GPT-5.4 Nano None",
+            "displayNameShort": "GPT-5.4 Nano None",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-nano-low",
+            "displayModelId": "gpt-5.4-nano-low",
+            "displayName": "GPT-5.4 Nano Low",
+            "displayNameShort": "GPT-5.4 Nano Low",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-nano-medium",
+            "displayModelId": "gpt-5.4-nano-medium",
+            "displayName": "GPT-5.4 Nano",
+            "displayNameShort": "GPT-5.4 Nano",
+            "aliases": [
+                "gpt-nano"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-nano-high",
+            "displayModelId": "gpt-5.4-nano-high",
+            "displayName": "GPT-5.4 Nano High",
+            "displayNameShort": "GPT-5.4 Nano High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.4-nano-xhigh",
+            "displayModelId": "gpt-5.4-nano-xhigh",
+            "displayName": "GPT-5.4 Nano Extra High",
+            "displayNameShort": "GPT-5.4 Nano Extra High",
+            "maxMode": false
+        },
+        {
+            "modelId": "grok-4-20",
+            "displayModelId": "grok-4-20",
+            "displayName": "Grok 4.20",
+            "displayNameShort": "Grok 4.20",
+            "maxMode": false
+        },
+        {
+            "modelId": "grok-4-20-thinking",
+            "displayModelId": "grok-4-20-thinking",
+            "displayName": "Grok 4.20 Thinking",
+            "displayNameShort": "Grok 4.20 Thinking",
+            "aliases": [
+                "grok"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "claude-4.5-sonnet",
+            "displayModelId": "claude-4.5-sonnet",
+            "displayName": "Sonnet 4.5 1M",
+            "displayNameShort": "Sonnet 4.5 1M",
+            "maxMode": false
+        },
+        {
+            "modelId": "claude-4.5-sonnet-thinking",
+            "displayModelId": "claude-4.5-sonnet-thinking",
+            "displayName": "Sonnet 4.5 1M Thinking",
+            "displayNameShort": "Sonnet 4.5 1M Thinking",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1-low",
+            "displayModelId": "gpt-5.1-low",
+            "displayName": "GPT-5.1 Low",
+            "displayNameShort": "GPT-5.1 Low",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1",
+            "displayModelId": "gpt-5.1",
+            "displayName": "GPT-5.1",
+            "displayNameShort": "GPT-5.1",
+            "aliases": [
+                "gpt"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1-high",
+            "displayModelId": "gpt-5.1-high",
+            "displayName": "GPT-5.1 High",
+            "displayNameShort": "GPT-5.1 High",
+            "maxMode": false
+        },
+        {
+            "modelId": "gemini-3-flash",
+            "displayModelId": "gemini-3-flash",
+            "displayName": "Gemini 3 Flash",
+            "displayNameShort": "Gemini 3 Flash",
+            "aliases": [
+                "gemini-flash"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1-codex-mini-low",
+            "displayModelId": "gpt-5.1-codex-mini-low",
+            "displayName": "Codex 5.1 Mini Low",
+            "displayNameShort": "Codex 5.1 Mini Low",
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1-codex-mini",
+            "displayModelId": "gpt-5.1-codex-mini",
+            "displayName": "Codex 5.1 Mini",
+            "displayNameShort": "Codex 5.1 Mini",
+            "aliases": [
+                "codex-mini"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "gpt-5.1-codex-mini-high",
+            "displayModelId": "gpt-5.1-codex-mini-high",
+            "displayName": "Codex 5.1 Mini High",
+            "displayNameShort": "Codex 5.1 Mini High",
+            "maxMode": false
+        },
+        {
+            "modelId": "claude-4-sonnet",
+            "displayModelId": "claude-4-sonnet",
+            "displayName": "Sonnet 4",
+            "displayNameShort": "Sonnet 4",
+            "aliases": [
+                "sonnet",
+                "sonnet-4"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "claude-4-sonnet-1m",
+            "displayModelId": "claude-4-sonnet-1m",
+            "displayName": "Sonnet 4 1M",
+            "displayNameShort": "Sonnet 4 1M",
+            "maxMode": true
+        },
+        {
+            "modelId": "claude-4-sonnet-thinking",
+            "displayModelId": "claude-4-sonnet-thinking",
+            "displayName": "Sonnet 4 Thinking",
+            "displayNameShort": "Sonnet 4 Thinking",
+            "maxMode": false
+        },
+        {
+            "modelId": "claude-4-sonnet-1m-thinking",
+            "displayModelId": "claude-4-sonnet-1m-thinking",
+            "displayName": "Sonnet 4 1M Thinking",
+            "displayNameShort": "Sonnet 4 1M Thinking",
+            "maxMode": true
+        },
+        {
+            "modelId": "gpt-5-mini",
+            "displayModelId": "gpt-5-mini",
+            "displayName": "GPT-5 Mini",
+            "displayNameShort": "GPT-5 Mini",
+            "aliases": [
+                "gpt-mini"
+            ],
+            "maxMode": false
+        },
+        {
+            "modelId": "kimi-k2.5",
+            "displayModelId": "kimi-k2.5",
+            "displayName": "Kimi K2.5",
+            "displayNameShort": "Kimi K2.5",
+            "aliases": [
+                "kimi"
+            ],
+            "maxMode": false
+        }
+    ]
+}

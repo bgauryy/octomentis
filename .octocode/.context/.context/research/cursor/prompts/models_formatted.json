@@ -1,0 +1,546 @@
+[
+  {
+    "id": "default",
+    "display": "Auto",
+    "aliases": [
+      "auto"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "composer-2-fast",
+    "display": "Composer 2 Fast",
+    "aliases": [
+      "composer"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "composer-2",
+    "display": "Composer 2",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "composer-1.5",
+    "display": "Composer 1.5",
+    "aliases": [
+      "composer"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.3-codex-low",
+    "display": "Codex 5.3 Low",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.3-codex-low-fast",
+    "display": "Codex 5.3 Low Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.3-codex",
+    "display": "Codex 5.3",
+    "aliases": [
+      "codex",
+      "codex-5.3"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.3-codex-fast",
+    "display": "Codex 5.3 Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.3-codex-high",
+    "display": "Codex 5.3 High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.3-codex-high-fast",
+    "display": "Codex 5.3 High Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.3-codex-xhigh",
+    "display": "Codex 5.3 Extra High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.3-codex-xhigh-fast",
+    "display": "Codex 5.3 Extra High Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2",
+    "display": "GPT-5.2",
+    "aliases": [
+      "gpt"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.3-codex-spark-preview-low",
+    "display": "Codex 5.3 Spark Low",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.3-codex-spark-preview",
+    "display": "Codex 5.3 Spark",
+    "aliases": [
+      "codex-spark",
+      "codex-5.3-spark"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.3-codex-spark-preview-high",
+    "display": "Codex 5.3 Spark High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.3-codex-spark-preview-xhigh",
+    "display": "Codex 5.3 Spark Extra High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-codex-low",
+    "display": "Codex 5.2 Low",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-codex-low-fast",
+    "display": "Codex 5.2 Low Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-codex",
+    "display": "Codex 5.2",
+    "aliases": [
+      "codex",
+      "codex-5.2"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-codex-fast",
+    "display": "Codex 5.2 Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-codex-high",
+    "display": "Codex 5.2 High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-codex-high-fast",
+    "display": "Codex 5.2 High Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-codex-xhigh",
+    "display": "Codex 5.2 Extra High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-codex-xhigh-fast",
+    "display": "Codex 5.2 Extra High Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1-codex-max-low",
+    "display": "Codex 5.1 Max Low",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1-codex-max-low-fast",
+    "display": "Codex 5.1 Max Low Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1-codex-max-medium",
+    "display": "Codex 5.1 Max",
+    "aliases": [
+      "codex",
+      "codex-5.1-max"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1-codex-max-medium-fast",
+    "display": "Codex 5.1 Max Medium Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1-codex-max-high",
+    "display": "Codex 5.1 Max High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1-codex-max-high-fast",
+    "display": "Codex 5.1 Max High Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1-codex-max-xhigh",
+    "display": "Codex 5.1 Max Extra High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1-codex-max-xhigh-fast",
+    "display": "Codex 5.1 Max Extra High Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-high",
+    "display": "GPT-5.4 1M High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-high-fast",
+    "display": "GPT-5.4 High Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-xhigh-fast",
+    "display": "GPT-5.4 Extra High Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "claude-4.6-opus-high-thinking",
+    "display": "Opus 4.6 1M Thinking",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-low",
+    "display": "GPT-5.4 1M Low",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-medium",
+    "display": "GPT-5.4 1M",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-medium-fast",
+    "display": "GPT-5.4 Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-xhigh",
+    "display": "GPT-5.4 1M Extra High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "claude-4.6-sonnet-medium",
+    "display": "Sonnet 4.6 1M",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "claude-4.6-sonnet-medium-thinking",
+    "display": "Sonnet 4.6 1M Thinking",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "claude-4.6-opus-high",
+    "display": "Opus 4.6 1M",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "claude-4.6-opus-max",
+    "display": "Opus 4.6 1M Max",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "claude-4.6-opus-max-thinking",
+    "display": "Opus 4.6 1M Max Thinking",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "claude-4.5-opus-high",
+    "display": "Opus 4.5",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "claude-4.5-opus-high-thinking",
+    "display": "Opus 4.5 Thinking",
+    "aliases": [
+      "opus",
+      "opus-4.5",
+      "opus-4-5"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-low",
+    "display": "GPT-5.2 Low",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-low-fast",
+    "display": "GPT-5.2 Low Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-fast",
+    "display": "GPT-5.2 Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-high",
+    "display": "GPT-5.2 High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-high-fast",
+    "display": "GPT-5.2 High Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-xhigh",
+    "display": "GPT-5.2 Extra High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.2-xhigh-fast",
+    "display": "GPT-5.2 Extra High Fast",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gemini-3.1-pro",
+    "display": "Gemini 3.1 Pro",
+    "aliases": [
+      "gemini",
+      "gemini-pro"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-mini-none",
+    "display": "GPT-5.4 Mini None",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-mini-low",
+    "display": "GPT-5.4 Mini Low",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-mini-medium",
+    "display": "GPT-5.4 Mini",
+    "aliases": [
+      "gpt-mini"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-mini-high",
+    "display": "GPT-5.4 Mini High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-mini-xhigh",
+    "display": "GPT-5.4 Mini Extra High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-nano-none",
+    "display": "GPT-5.4 Nano None",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-nano-low",
+    "display": "GPT-5.4 Nano Low",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-nano-medium",
+    "display": "GPT-5.4 Nano",
+    "aliases": [
+      "gpt-nano"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-nano-high",
+    "display": "GPT-5.4 Nano High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.4-nano-xhigh",
+    "display": "GPT-5.4 Nano Extra High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "grok-4-20",
+    "display": "Grok 4.20",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "grok-4-20-thinking",
+    "display": "Grok 4.20 Thinking",
+    "aliases": [
+      "grok"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "claude-4.5-sonnet",
+    "display": "Sonnet 4.5 1M",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "claude-4.5-sonnet-thinking",
+    "display": "Sonnet 4.5 1M Thinking",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1-low",
+    "display": "GPT-5.1 Low",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1",
+    "display": "GPT-5.1",
+    "aliases": [
+      "gpt"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1-high",
+    "display": "GPT-5.1 High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gemini-3-flash",
+    "display": "Gemini 3 Flash",
+    "aliases": [
+      "gemini-flash"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1-codex-mini-low",
+    "display": "Codex 5.1 Mini Low",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1-codex-mini",
+    "display": "Codex 5.1 Mini",
+    "aliases": [
+      "codex-mini"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "gpt-5.1-codex-mini-high",
+    "display": "Codex 5.1 Mini High",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "claude-4-sonnet",
+    "display": "Sonnet 4",
+    "aliases": [
+      "sonnet",
+      "sonnet-4"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "claude-4-sonnet-1m",
+    "display": "Sonnet 4 1M",
+    "aliases": [],
+    "maxMode": true
+  },
+  {
+    "id": "claude-4-sonnet-thinking",
+    "display": "Sonnet 4 Thinking",
+    "aliases": [],
+    "maxMode": false
+  },
+  {
+    "id": "claude-4-sonnet-1m-thinking",
+    "display": "Sonnet 4 1M Thinking",
+    "aliases": [],
+    "maxMode": true
+  },
+  {
+    "id": "gpt-5-mini",
+    "display": "GPT-5 Mini",
+    "aliases": [
+      "gpt-mini"
+    ],
+    "maxMode": false
+  },
+  {
+    "id": "kimi-k2.5",
+    "display": "Kimi K2.5",
+    "aliases": [
+      "kimi"
+    ],
+    "maxMode": false
+  }
+]

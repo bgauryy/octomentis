@@ -1,0 +1,11 @@
+{
+  "name": "awesome-project",
+  "version": "1.0.0",
+  "description": "A useful development utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "echo 'no linter configured'",
+    "test": "echo 'no tests configured'"
+  }
+}
