@@ -86,4 +86,5 @@ export type SkillRequestResolutionError = {
 };
 
 export type SkillRequestResolution =
-  { requests: SkillInstallRequest[] } | SkillRequestResolutionError;
+  | { requests: SkillInstallRequest[] }
+  | SkillRequestResolutionError;

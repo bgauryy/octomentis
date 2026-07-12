@@ -20,7 +20,8 @@ export function directToolText(result: DirectToolResult): string {
 
 export function parseCloneResult(result: DirectToolResult): CloneResultData {
   const structured = result.structuredContent as
-    CloneStructuredContent | undefined;
+    | CloneStructuredContent
+    | undefined;
   return structured?.results?.[0]?.data ?? {};
 }
 
@@ -29,7 +30,8 @@ export function parseFetchResult(
   kind: Extract<RemoteMaterializationKind, 'file' | 'tree'>
 ): FetchFileData | FetchDirectoryData {
   const structured = result.structuredContent as
-    FetchStructuredContent | undefined;
+    | FetchStructuredContent
+    | undefined;
   const first = structured?.results?.[0];
   const data = first?.data ?? first;
   if (kind === 'file') return data?.files?.[0] ?? {};

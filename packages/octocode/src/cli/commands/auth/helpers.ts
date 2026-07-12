@@ -4,7 +4,12 @@ import type { getAuthStatusAsync } from '../../../features/github-oauth.js';
 import type { ParsedArgs } from '../../types.js';
 
 export type AuthMenuAction =
-  'login' | 'logout' | 'switch' | 'gh-login' | 'gh-logout' | 'back';
+  | 'login'
+  | 'logout'
+  | 'switch'
+  | 'gh-login'
+  | 'gh-logout'
+  | 'back';
 
 export function isOctocodeAuthStatus(
   status: Awaited<ReturnType<typeof getAuthStatusAsync>>
