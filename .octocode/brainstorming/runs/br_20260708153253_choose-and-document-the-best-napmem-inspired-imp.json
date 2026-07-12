@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260708153253_choose-and-document-the-best-napmem-inspired-imp",
+  "idea": "Choose and document the best NapMem-inspired improvement for octocode-awareness current flows",
+  "mode": "Validate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/octocode-mcp",
+  "createdAt": "2026-07-08T15:32:53.931Z",
+  "updatedAt": "2026-07-08T15:39:25.981Z",
+  "surfacePlan": {
+    "local": "active: docs and implementation are source of truth",
+    "web": "bounded: NapMem paper already read as anchor",
+    "githubPackages": "skipped: decision is local-flow tradeoff"
+  },
+  "claims": [
+    {
+      "claim": "memory navigate is best first improvement -> uses existing status/query/recall/mine-weakness/refinement/signal surfaces with low schema risk -> strong",
+      "at": "2026-07-08T15:39:01.031Z",
+      "stage": "decide"
+    },
+    {
+      "claim": "topic tracks and persisted evidence strength are valuable but should follow trace evidence because they add schema/projection/invalidation cost -> strong",
+      "at": "2026-07-08T15:39:01.031Z",
+      "stage": "decide"
+    },
+    {
+      "claim": "semantic recall is not automatic in CLI/Pi; exported helpers are storeEmbedding/searchByEmbedding -> strong",
+      "at": "2026-07-08T15:39:01.031Z",
+      "stage": "decide"
+    }
+  ],
+  "sources": [
+    {
+      "source": "file:/Users/guybary/Documents/octocode-mcp/packages/octocode-awareness/docs/MEMORY_NAVIGATION.md",
+      "at": "2026-07-08T15:39:01.031Z",
+      "stage": "decide"
+    },
+    {
+      "source": "file:/Users/guybary/Documents/octocode-mcp/packages/octocode-awareness/docs/MEMORY_NAVIGATION.md",
+      "at": "2026-07-08T15:39:01.031Z",
+      "stage": "decide"
+    },
+    {
+      "source": "file:/Users/guybary/Documents/octocode-mcp/packages/octocode-awareness/docs/DB.md",
+      "at": "2026-07-08T15:39:01.031Z",
+      "stage": "decide"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-08T15:32:53.931Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Choose and document the best NapMem-inspired improvement for octocode-awareness current flows"
+    },
+    {
+      "at": "2026-07-08T15:39:01.031Z",
+      "type": "checkpoint",
+      "stage": "decide",
+      "summary": "Documented Prototype First decision: deterministic memory navigation over existing Awareness surfaces is the best next improvement; semantic recall docs corrected to lexical default plus explicit embedding helpers.",
+      "claims": [
+        "memory navigate is best first improvement -> uses existing status/query/recall/mine-weakness/refinement/signal surfaces with low schema risk -> strong",
+        "topic tracks and persisted evidence strength are valuable but should follow trace evidence because they add schema/projection/invalidation cost -> strong",
+        "semantic recall is not automatic in CLI/Pi; exported helpers are storeEmbedding/searchByEmbedding -> strong"
+      ],
+      "sources": [
+        "file:/Users/guybary/Documents/octocode-mcp/packages/octocode-awareness/docs/MEMORY_NAVIGATION.md",
+        "file:/Users/guybary/Documents/octocode-mcp/packages/octocode-awareness/docs/MEMORY_NAVIGATION.md",
+        "file:/Users/guybary/Documents/octocode-mcp/packages/octocode-awareness/docs/DB.md"
+      ]
+    },
+    {
+      "at": "2026-07-08T15:39:25.980Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "Best improvement is deterministic memory navigate over current Awareness surfaces; docs now capture the tradeoff and semantic recall boundary."
+    }
+  ],
+  "final": {
+    "at": "2026-07-08T15:39:25.980Z",
+    "verdict": "worth-prototyping",
+    "decision": "Prototype First",
+    "summary": "Best improvement is deterministic memory navigate over current Awareness surfaces; docs now capture the tradeoff and semantic recall boundary."
+  },
+  "eval": null
+}

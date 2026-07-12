@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260710075247_homeostatic-awareness-loop-as-the-repo-s-living-",
+  "idea": "Homeostatic Awareness Loop as the repo's living-system operating thesis, with DB/hooks/skill integration and strict token budgets",
+  "mode": "Validate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/octocode-mcp",
+  "createdAt": "2026-07-10T07:52:47.204Z",
+  "updatedAt": "2026-07-10T08:18:39.457Z",
+  "surfacePlan": {
+    "local": "active: runtime and docs are source of truth",
+    "web": "active: primary homeostasis and agent-harness evidence",
+    "github_packages": "limited: direct prior art only",
+    "social": "skipped: not authoritative"
+  },
+  "claims": [
+    {
+      "claim": "Homeostatic framing is useful only when each metaphor maps to a regulated variable, sensor, bounded actuator, guard, and remeasurement -> local runtime/docs + physiology control theory -> strong",
+      "at": "2026-07-10T07:55:24.037Z",
+      "stage": "research"
+    },
+    {
+      "claim": "Token efficiency is a regulated variable, not a prose preference: compact attend <=2KB and silent fingerprinted hooks are shipped; bulk workboard remains pressure -> local tests/measurements -> strong",
+      "at": "2026-07-10T07:55:24.037Z",
+      "stage": "research"
+    },
+    {
+      "claim": "Token pressure is now measurable: 110-token discovery, 1269-token lobby, 408-token compact attend, 514-token optional control reference; unchanged hooks stay silent and prompt digest is non-mutating.",
+      "at": "2026-07-10T08:18:39.428Z",
+      "stage": "validate"
+    }
+  ],
+  "sources": [
+    {
+      "source": "packages/octocode-awareness/skills/octocode-awareness/references/homeostatic-loop.md",
+      "at": "2026-07-10T07:55:24.037Z",
+      "stage": "research"
+    },
+    {
+      "source": "packages/octocode-awareness/docs/HARNESS.md",
+      "at": "2026-07-10T07:55:24.037Z",
+      "stage": "research"
+    },
+    {
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7076167/",
+      "at": "2026-07-10T07:55:24.037Z",
+      "stage": "research"
+    },
+    {
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3921176/",
+      "at": "2026-07-10T07:55:24.037Z",
+      "stage": "research"
+    },
+    {
+      "source": "local:packages/octocode-awareness/tests and o200k_base measurements",
+      "at": "2026-07-10T08:18:39.428Z",
+      "stage": "validate"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-10T07:52:47.204Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Homeostatic Awareness Loop as the repo's living-system operating thesis, with DB/hooks/skill integration and strict token budgets"
+    },
+    {
+      "at": "2026-07-10T07:55:24.037Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Local truth supports a repo-scoped feedback system, not literal life: SQLite is durable state, CLI/hooks are actuators/reflexes, skill is policy, verification is error signal, and wiki is an optional projection. Attachment must correct advisory work vs exclusive claim, Node 22.13+, conditional wiki loading/root edits, and non-automatic learning.",
+      "claims": [
+        "Homeostatic framing is useful only when each metaphor maps to a regulated variable, sensor, bounded actuator, guard, and remeasurement -> local runtime/docs + physiology control theory -> strong",
+        "Token efficiency is a regulated variable, not a prose preference: compact attend <=2KB and silent fingerprinted hooks are shipped; bulk workboard remains pressure -> local tests/measurements -> strong"
+      ],
+      "sources": [
+        "packages/octocode-awareness/skills/octocode-awareness/references/homeostatic-loop.md",
+        "packages/octocode-awareness/docs/HARNESS.md",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7076167/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3921176/"
+      ]
+    },
+    {
+      "at": "2026-07-10T08:18:39.428Z",
+      "type": "checkpoint",
+      "stage": "validate",
+      "summary": "Independent research and runtime audits support a supervised software control loop, not literal life. TDD implementation is green; the skill uses graph-routed disclosure and prompt hooks only preview maintenance.",
+      "claims": [
+        "Token pressure is now measurable: 110-token discovery, 1269-token lobby, 408-token compact attend, 514-token optional control reference; unchanged hooks stay silent and prompt digest is non-mutating."
+      ],
+      "sources": [
+        "local:packages/octocode-awareness/tests and o200k_base measurements"
+      ]
+    },
+    {
+      "at": "2026-07-10T08:18:39.456Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "Keep the Homeostatic Awareness Loop as a bounded human/agent-in-the-loop product thesis. Ship measured token, coordination, verification, memory, projection, and harness pressures with explicit guards; reject sentience, autonomous mutation, and background-cleanup claims."
+    }
+  ],
+  "final": {
+    "at": "2026-07-10T08:18:39.456Z",
+    "verdict": "worth-prototyping",
+    "decision": "Prototype First",
+    "summary": "Keep the Homeostatic Awareness Loop as a bounded human/agent-in-the-loop product thesis. Ship measured token, coordination, verification, memory, projection, and harness pressures with explicit guards; reject sentience, autonomous mutation, and background-cleanup claims."
+  },
+  "eval": null
+}

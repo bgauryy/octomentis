@@ -17,7 +17,6 @@ target/
 **/bench/results/
 out
 coverage
-.octocode
 .env
 .cursor
 .context

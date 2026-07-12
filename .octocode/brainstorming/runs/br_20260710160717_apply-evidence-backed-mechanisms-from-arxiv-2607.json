@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260710160717_apply-evidence-backed-mechanisms-from-arxiv-2607",
+  "idea": "Apply evidence-backed mechanisms from arXiv:2607.08716 to make octocode-awareness close its sense-act-learn loop with less bloat",
+  "mode": "Validate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/octocode-mcp",
+  "createdAt": "2026-07-10T16:07:17.715Z",
+  "updatedAt": "2026-07-10T16:30:35.720Z",
+  "surfacePlan": {
+    "local": "active: current Awareness contracts, schema, CLI, tests, docs",
+    "web": "active: official arXiv paper and linked primary artifacts",
+    "github_packages": "conditional: only paper-linked implementation or dependency evidence",
+    "goal": "a measurable mechanism improvement, not copied terminology",
+    "kpi": "new held-out deterministic eval passes; existing package gates stay green; compact output and authority guards do not regress"
+  },
+  "claims": [
+    {
+      "claim": "Selective prompt-grounded intervention is the smallest high-fit Awareness improvement; preserve operational signals/overrides and unchanged-state fingerprints.",
+      "at": "2026-07-10T16:10:02.621Z",
+      "stage": "research"
+    }
+  ],
+  "sources": [
+    {
+      "source": "https://arxiv.org/abs/2607.08716v1",
+      "at": "2026-07-10T16:10:02.621Z",
+      "stage": "research"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-10T16:07:17.715Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Apply evidence-backed mechanisms from arXiv:2607.08716 to make octocode-awareness close its sense-act-learn loop with less bloat"
+    },
+    {
+      "at": "2026-07-10T16:10:02.621Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Paper defines behavioral state decay and finds maintained memory plus selective grounded intervention most balanced; Awareness already maintains state but notifyGet broadcasts top memories without prompt relevance. Prototype query-grounded reminders with explicit silence and no new storage.",
+      "claims": [
+        "Selective prompt-grounded intervention is the smallest high-fit Awareness improvement; preserve operational signals/overrides and unchanged-state fingerprints."
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2607.08716v1"
+      ]
+    },
+    {
+      "at": "2026-07-10T16:30:35.720Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "Accepted: reuse Awareness v1 state, select at most one prompt-grounded memory lead with explicit silence, keep operational signals/overrides separate, store no prompt and add no schema/table. KPI moved from 0/4 new held-out checks to 4/4; Awareness 770/770, Pi 214/214 (+2 skipped), smoke and skill review passed. Do not claim the paper's benchmark gains or learned-agent equivalence."
+    }
+  ],
+  "final": {
+    "at": "2026-07-10T16:30:35.720Z",
+    "verdict": "worth-prototyping",
+    "decision": "Prototype",
+    "summary": "Accepted: reuse Awareness v1 state, select at most one prompt-grounded memory lead with explicit silence, keep operational signals/overrides separate, store no prompt and add no schema/table. KPI moved from 0/4 new held-out checks to 4/4; Awareness 770/770, Pi 214/214 (+2 skipped), smoke and skill review passed. Do not claim the paper's benchmark gains or learned-agent equivalence."
+  },
+  "eval": null
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260710141102_octocode-eval-skill-teach-agents-how-to-evaluate",
+  "idea": "octocode-eval skill: teach agents how to evaluate, set KPIs, run agent loops, and self-improve — grounded in Karpathy + Octocode harness thesis",
+  "mode": "Validate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/octocode-mcp",
+  "createdAt": "2026-07-10T14:11:02.451Z",
+  "updatedAt": "2026-07-10T14:12:51.066Z",
+  "surfacePlan": {
+    "local": "active - existing improve-loop/THESIS/eval-*.mjs",
+    "web": "active - Karpathy articles/talks + eval best practices",
+    "github": "active - Karpathy repos + agent eval frameworks",
+    "packages": "active - eval harness packages"
+  },
+  "claims": [
+    {
+      "claim": "Karpathy autoresearch = one mutable file + one metric + fixed budget + keep/discard forever",
+      "at": "2026-07-10T14:12:34.309Z",
+      "stage": "research"
+    }
+  ],
+  "sources": [
+    {
+      "source": "https://github.com/karpathy/autoresearch",
+      "at": "2026-07-10T14:12:34.309Z",
+      "stage": "research"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-10T14:11:02.451Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "octocode-eval skill: teach agents how to evaluate, set KPIs, run agent loops, and self-improve — grounded in Karpathy + Octocode harness thesis"
+    },
+    {
+      "at": "2026-07-10T14:12:34.309Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Primary Karpathy sources fetched: Year-in-Review 2025, autoresearch README+program.md, Software 2.0, Dwarkesh; local improve-loop/THESIS/eval-*.mjs mapped",
+      "claims": [
+        "Karpathy autoresearch = one mutable file + one metric + fixed budget + keep/discard forever"
+      ],
+      "sources": [
+        "https://github.com/karpathy/autoresearch"
+      ]
+    },
+    {
+      "at": "2026-07-10T14:12:51.065Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "Build octocode-eval skill adapting Karpathy autoresearch loop + Software 2.0 verifiability + Octocode improve-loop/THESIS; do not duplicate awareness reflection ownership"
+    }
+  ],
+  "final": {
+    "at": "2026-07-10T14:12:51.065Z",
+    "verdict": "worth-prototyping",
+    "decision": "Prototype First",
+    "summary": "Build octocode-eval skill adapting Karpathy autoresearch loop + Software 2.0 verifiability + Octocode improve-loop/THESIS; do not duplicate awareness reflection ownership"
+  },
+  "eval": null
+}

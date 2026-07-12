@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260708193848_deepen-homeostatic-awareness-loop-approach-using",
+  "idea": "Deepen Homeostatic Awareness Loop approach using subagents across nature, AI/ML, model/context memory, agent/task systems, and tech prior art",
+  "mode": "Validate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/octocode-mcp",
+  "createdAt": "2026-07-08T19:38:48.147Z",
+  "updatedAt": "2026-07-08T19:48:15.260Z",
+  "surfacePlan": {
+    "local": "active: RFC and octocode-awareness package define constraints",
+    "web": "active: primary papers/articles across nature, AI/ML, models, agents, software knowledge tools",
+    "githubPackages": "active: code/prior-art checks for agent memory, long-term memory, task/workboard approaches",
+    "subagents": "active: four workers capped under hard gate"
+  },
+  "claims": [
+    {
+      "claim": "RAG/RETRO/Memorizing Transformers/LongMem/Focus show explicit memory and compression help, but retrieval can hurt when irrelevant -> high",
+      "at": "2026-07-08T19:45:56.286Z",
+      "stage": "research"
+    },
+    {
+      "claim": "agent memory should be episodic/semantic/procedural and feedback-grounded; persistent memory needs trust/provenance gates -> high",
+      "at": "2026-07-08T19:45:56.301Z",
+      "stage": "research"
+    },
+    {
+      "claim": "Octocode should not compete as generic memory DB or Jira clone; differentiate on local repo-scoped evidence, verification debt, handoff hygiene, and generated projections -> high",
+      "at": "2026-07-08T19:45:56.322Z",
+      "stage": "research"
+    },
+    {
+      "claim": "biology/system sources support replay, consolidation, active forgetting, downscaling, autophagy, and stigmergic traces as design heuristics -> high/medium; not direct product proof",
+      "at": "2026-07-08T19:46:11.852Z",
+      "stage": "research"
+    }
+  ],
+  "sources": [
+    {
+      "source": "subagent:019f433d-da3a-7670-b63b-5f7ecde1ef0f",
+      "at": "2026-07-08T19:45:56.286Z",
+      "stage": "research"
+    },
+    {
+      "source": "subagent:019f433d-d977-7af0-be1f-d3d7bf74fb6e",
+      "at": "2026-07-08T19:45:56.301Z",
+      "stage": "research"
+    },
+    {
+      "source": "subagent:019f433d-daf6-7231-832a-94bd538a30b4",
+      "at": "2026-07-08T19:45:56.322Z",
+      "stage": "research"
+    },
+    {
+      "source": "subagent:019f433d-d8b8-7b43-8946-21e54a4846a8",
+      "at": "2026-07-08T19:46:11.852Z",
+      "stage": "research"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-08T19:38:48.147Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Deepen Homeostatic Awareness Loop approach using subagents across nature, AI/ML, model/context memory, agent/task systems, and tech prior art"
+    },
+    {
+      "at": "2026-07-08T19:45:56.286Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "ML/model lane supports explicit external memory, hybrid retrieval, compression, and abstention instead of long context stuffing.",
+      "claims": [
+        "RAG/RETRO/Memorizing Transformers/LongMem/Focus show explicit memory and compression help, but retrieval can hurt when irrelevant -> high"
+      ],
+      "sources": [
+        "subagent:019f433d-da3a-7670-b63b-5f7ecde1ef0f"
+      ]
+    },
+    {
+      "at": "2026-07-08T19:45:56.301Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "AI agent memory lane supports raw episodes -> reflection -> retrieval -> planning, but warns against ungrounded self-reflection and memory poisoning.",
+      "claims": [
+        "agent memory should be episodic/semantic/procedural and feedback-grounded; persistent memory needs trust/provenance gates -> high"
+      ],
+      "sources": [
+        "subagent:019f433d-d977-7af0-be1f-d3d7bf74fb6e"
+      ]
+    },
+    {
+      "at": "2026-07-08T19:45:56.322Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Tech/product lane shows generic agent memory, graph memory, checkpointing, and issue trackers are crowded; underserved wedge is repo-scoped operational awareness.",
+      "claims": [
+        "Octocode should not compete as generic memory DB or Jira clone; differentiate on local repo-scoped evidence, verification debt, handoff hygiene, and generated projections -> high"
+      ],
+      "sources": [
+        "subagent:019f433d-daf6-7231-832a-94bd538a30b4"
+      ]
+    },
+    {
+      "at": "2026-07-08T19:46:11.852Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Nature/systems lane supports wake/sleep/metabolism as heuristics, with report-first cleanup and preserved IDs.",
+      "claims": [
+        "biology/system sources support replay, consolidation, active forgetting, downscaling, autophagy, and stigmergic traces as design heuristics -> high/medium; not direct product proof"
+      ],
+      "sources": [
+        "subagent:019f433d-d8b8-7b43-8946-21e54a4846a8"
+      ]
+    },
+    {
+      "at": "2026-07-08T19:48:15.260Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "Deep subagent research validates the Homeostatic Awareness Loop as the right approach, with two added gates before implementation: retrieval/compression gating before attend/context injection, and trust/provenance gating before durable memory promotion. Biology supports replay/consolidation/forgetting as heuristics; AI-agent evidence supports feedback-grounded reflection; ML retrieval evidence warns against top-k dumping; product prior art says the wedge is repo-scoped operational awareness, not generic memory DB or Jira."
+    }
+  ],
+  "final": {
+    "at": "2026-07-08T19:48:15.260Z",
+    "verdict": "worth-prototyping",
+    "decision": "Prototype First + RFC Patch",
+    "summary": "Deep subagent research validates the Homeostatic Awareness Loop as the right approach, with two added gates before implementation: retrieval/compression gating before attend/context injection, and trust/provenance gating before durable memory promotion. Biology supports replay/consolidation/forgetting as heuristics; AI-agent evidence supports feedback-grounded reflection; ML retrieval evidence warns against top-k dumping; product prior art says the wedge is repo-scoped operational awareness, not generic memory DB or Jira."
+  },
+  "eval": null
+}

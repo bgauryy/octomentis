@@ -1,0 +1,227 @@
+{
+  "generated_at": "2026-07-12T09:22:00Z",
+  "generator": "@octocodeai/octocode-awareness repo inject",
+  "mode": "local",
+  "workspace_path": "/Users/guybary/Documents/octocode-mcp",
+  "artifact": null,
+  "repo": null,
+  "ref": null,
+  "source": {
+    "canonical": "/Users/guybary/.octocode/memory/awareness.sqlite3",
+    "projection": ".octocode",
+    "revision": "sha256:95f7bac23a1c458938835e6302bfa82b37146573273cd3d7e10de5c7515ec4a4",
+    "revision_algorithm": "sha256:bounded-live-sections-v1"
+  },
+  "policy": {
+    "gitignore_modified": false,
+    "share_decision": "user-owned"
+  },
+  "counts": {
+    "repo-profile": 14,
+    "memories": 50,
+    "gotchas": 46,
+    "lessons": 42,
+    "plans": 9,
+    "tasks": 34,
+    "runs": 50,
+    "locks": 0,
+    "agents": 50,
+    "signals": 23,
+    "refinements": 50,
+    "files": 50,
+    "activity": 50,
+    "workboard": 95,
+    "developer-review": 1
+  },
+  "completeness": {
+    "repo-profile": {
+      "visible": 14,
+      "total": 14,
+      "omitted_count": 0,
+      "is_partial": false,
+      "continuation": null
+    },
+    "memories": {
+      "visible": 50,
+      "total": null,
+      "omitted_count": null,
+      "is_partial": true,
+      "continuation": "query memories --limit 100; narrow filters if the result remains partial"
+    },
+    "gotchas": {
+      "visible": 46,
+      "total": 46,
+      "omitted_count": 0,
+      "is_partial": false,
+      "continuation": null
+    },
+    "lessons": {
+      "visible": 42,
+      "total": 42,
+      "omitted_count": 0,
+      "is_partial": false,
+      "continuation": null
+    },
+    "plans": {
+      "visible": 9,
+      "total": 9,
+      "omitted_count": 0,
+      "is_partial": false,
+      "continuation": null
+    },
+    "tasks": {
+      "visible": 34,
+      "total": 34,
+      "omitted_count": 0,
+      "is_partial": false,
+      "continuation": null
+    },
+    "runs": {
+      "visible": 50,
+      "total": null,
+      "omitted_count": null,
+      "is_partial": true,
+      "continuation": "query runs --limit 100; narrow filters if the result remains partial"
+    },
+    "locks": {
+      "visible": 0,
+      "total": 0,
+      "omitted_count": 0,
+      "is_partial": false,
+      "continuation": null
+    },
+    "agents": {
+      "visible": 50,
+      "total": null,
+      "omitted_count": null,
+      "is_partial": true,
+      "continuation": "query agents --limit 100; narrow filters if the result remains partial"
+    },
+    "signals": {
+      "visible": 23,
+      "total": 23,
+      "omitted_count": 0,
+      "is_partial": false,
+      "continuation": null
+    },
+    "refinements": {
+      "visible": 50,
+      "total": null,
+      "omitted_count": null,
+      "is_partial": true,
+      "continuation": "query refinements --limit 100; narrow filters if the result remains partial"
+    },
+    "files": {
+      "visible": 50,
+      "total": null,
+      "omitted_count": null,
+      "is_partial": true,
+      "continuation": "query files --limit 100; narrow filters if the result remains partial"
+    },
+    "activity": {
+      "visible": 50,
+      "total": null,
+      "omitted_count": null,
+      "is_partial": true,
+      "continuation": "query activity --limit 100; narrow filters if the result remains partial"
+    },
+    "workboard": {
+      "visible": 95,
+      "total": 174,
+      "omitted_count": 79,
+      "is_partial": true,
+      "continuation": "drill into the named workboard lane with its targeted command; lane output is intentionally bounded"
+    },
+    "developer-review": {
+      "visible": 1,
+      "total": 1,
+      "omitted_count": 0,
+      "is_partial": false,
+      "continuation": null
+    }
+  },
+  "budgets": {
+    "markdown": {
+      "AGENTS.md": {
+        "max_lines": 80,
+        "role": "agent start summary",
+        "actual_lines": 37,
+        "within_budget": true
+      },
+      "KNOWLEDGE.md": {
+        "max_lines": 200,
+        "role": "bounded verified-knowledge leads",
+        "actual_lines": 196,
+        "within_budget": true
+      }
+    },
+    "workboard": {
+      "max_rows_per_column": 10
+    },
+    "attend_compact": {
+      "max_lines": 40,
+      "max_json_bytes": 2048
+    }
+  },
+  "files": [
+    ".octocode/AGENTS.md",
+    ".octocode/KNOWLEDGE.md",
+    ".octocode/awareness/manifest.json"
+  ],
+  "orphan_cleanup": {
+    "candidates": [
+      ".octocode/BOOKMARKS.md",
+      ".octocode/DEVELOPER_REVIEW.md",
+      ".octocode/GOTCHAS.md",
+      ".octocode/LEARN.md",
+      ".octocode/MEMORY.md",
+      ".octocode/awareness/csv/activity.csv",
+      ".octocode/awareness/csv/agents.csv",
+      ".octocode/awareness/csv/files.csv",
+      ".octocode/awareness/csv/gotchas.csv",
+      ".octocode/awareness/csv/lessons.csv",
+      ".octocode/awareness/csv/locks.csv",
+      ".octocode/awareness/csv/memories.csv",
+      ".octocode/awareness/csv/plans.csv",
+      ".octocode/awareness/csv/refinements.csv",
+      ".octocode/awareness/csv/runs.csv",
+      ".octocode/awareness/csv/signals.csv",
+      ".octocode/awareness/csv/tasks.csv",
+      ".octocode/awareness/csv/workboard.csv",
+      ".octocode/awareness/index.html",
+      ".octocode/references/repo-map.md"
+    ],
+    "pruned": [
+      ".octocode/BOOKMARKS.md",
+      ".octocode/DEVELOPER_REVIEW.md",
+      ".octocode/GOTCHAS.md",
+      ".octocode/LEARN.md",
+      ".octocode/MEMORY.md",
+      ".octocode/awareness/csv/activity.csv",
+      ".octocode/awareness/csv/agents.csv",
+      ".octocode/awareness/csv/files.csv",
+      ".octocode/awareness/csv/gotchas.csv",
+      ".octocode/awareness/csv/lessons.csv",
+      ".octocode/awareness/csv/locks.csv",
+      ".octocode/awareness/csv/memories.csv",
+      ".octocode/awareness/csv/plans.csv",
+      ".octocode/awareness/csv/refinements.csv",
+      ".octocode/awareness/csv/runs.csv",
+      ".octocode/awareness/csv/signals.csv",
+      ".octocode/awareness/csv/tasks.csv",
+      ".octocode/awareness/csv/workboard.csv",
+      ".octocode/awareness/index.html",
+      ".octocode/references/repo-map.md"
+    ]
+  },
+  "warnings": [
+    "projection section memories is partial: query memories --limit 100; narrow filters if the result remains partial",
+    "projection section runs is partial: query runs --limit 100; narrow filters if the result remains partial",
+    "projection section agents is partial: query agents --limit 100; narrow filters if the result remains partial",
+    "projection section refinements is partial: query refinements --limit 100; narrow filters if the result remains partial",
+    "projection section files is partial: query files --limit 100; narrow filters if the result remains partial",
+    "projection section activity is partial: query activity --limit 100; narrow filters if the result remains partial",
+    "projection section workboard is partial: drill into the named workboard lane with its targeted command; lane output is intentionally bounded",
+    "generated path is gitignored: .octocode; remove the ignore intentionally if this repo should share .octocode"
+  ]
+}

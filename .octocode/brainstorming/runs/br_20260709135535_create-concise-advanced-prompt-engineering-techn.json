@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260709135535_create-concise-advanced-prompt-engineering-techn",
+  "idea": "Create concise advanced prompt-engineering techniques playbook for agents",
+  "mode": "Validate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/octocode-mcp",
+  "createdAt": "2026-07-09T13:55:35.180Z",
+  "updatedAt": "2026-07-09T13:57:19.663Z",
+  "surfacePlan": {
+    "local": "active: prompt-optimizer reference ownership",
+    "web": "active: OpenAI and Anthropic primary prompting docs",
+    "github": "active: dair-ai Prompt-Engineering-Guide as landscape",
+    "packages": "skipped: no framework or dependency selection"
+  },
+  "claims": [
+    {
+      "claim": "Few-shot examples, retrieval context, structured sections, tool guidance, and prompt caching are distinct techniques with separate trigger conditions; prompt changes should be evaluation-driven -> DAIR guide plus OpenAI/Anthropic guidance -> strong",
+      "at": "2026-07-09T13:56:13.367Z",
+      "stage": "research"
+    }
+  ],
+  "sources": [
+    {
+      "source": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "at": "2026-07-09T13:56:13.367Z",
+      "stage": "research"
+    },
+    {
+      "source": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+      "at": "2026-07-09T13:56:13.367Z",
+      "stage": "research"
+    },
+    {
+      "source": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+      "at": "2026-07-09T13:56:13.367Z",
+      "stage": "research"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-09T13:55:35.180Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Create concise advanced prompt-engineering techniques playbook for agents"
+    },
+    {
+      "at": "2026-07-09T13:56:13.367Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Technique catalogs are broad, but primary guidance favors evaluations, precise task contracts, relevant context, and selective examples. The right reusable artifact is a compact selector, not an exhaustive taxonomy.",
+      "claims": [
+        "Few-shot examples, retrieval context, structured sections, tool guidance, and prompt caching are distinct techniques with separate trigger conditions; prompt changes should be evaluation-driven -> DAIR guide plus OpenAI/Anthropic guidance -> strong"
+      ],
+      "sources": [
+        "https://github.com/dair-ai/Prompt-Engineering-Guide",
+        "https://developers.openai.com/api/docs/guides/prompt-engineering",
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      ]
+    },
+    {
+      "at": "2026-07-09T13:57:19.662Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "Added a 38-line, evidence-backed selector covering direct contracts, examples, delimiters, schemas, RAG, tools/ReAct, chaining, candidates, planning, caching, and evaluation guardrails."
+    }
+  ],
+  "final": {
+    "at": "2026-07-09T13:57:19.662Z",
+    "verdict": "narrow",
+    "decision": "Narrow: agent technique selector, not exhaustive prompt catalog",
+    "summary": "Added a 38-line, evidence-backed selector covering direct contracts, examples, delimiters, schemas, RAG, tools/ReAct, chaining, candidates, planning, caching, and evaluation guardrails."
+  },
+  "eval": null
+}

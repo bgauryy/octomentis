@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260708152614_apply-napmem-active-memory-navigation-ideas-from",
+  "idea": "Apply NapMem active memory navigation ideas from arXiv 2607.05794v1 to packages/octocode-awareness",
+  "mode": "Validate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/octocode-mcp",
+  "createdAt": "2026-07-08T15:26:14.955Z",
+  "updatedAt": "2026-07-08T15:30:25.892Z",
+  "surfacePlan": {
+    "local": "active: awareness package is target",
+    "web": "active: NapMem paper is anchor",
+    "githubPackages": "skipped: local-paper gap appears sufficient unless contradictions emerge"
+  },
+  "claims": [
+    {
+      "claim": "Awareness already has structured memory recall/provenance/query/reflection primitives -> local src/memory.ts, src/db.ts, src/repo-context.ts, src/reflect.ts -> strong",
+      "at": "2026-07-08T15:29:53.776Z",
+      "stage": "research"
+    },
+    {
+      "claim": "Largest gap is learned or explicit navigation over memory granularities -> arXiv 2607.05794v1 plus local fixed command loop -> moderate",
+      "at": "2026-07-08T15:29:53.776Z",
+      "stage": "research"
+    },
+    {
+      "claim": "Embedding helpers exist but are not integrated into CLI getMemory; CLI warns semantic fallback -> local bin/awareness.ts + LSP refs -> strong",
+      "at": "2026-07-08T15:29:53.776Z",
+      "stage": "research"
+    }
+  ],
+  "sources": [
+    {
+      "source": "file:/Users/guybary/Documents/octocode-mcp/packages/octocode-awareness/src/memory.ts",
+      "at": "2026-07-08T15:29:53.776Z",
+      "stage": "research"
+    },
+    {
+      "source": "https://arxiv.org/html/2607.05794v1",
+      "at": "2026-07-08T15:29:53.776Z",
+      "stage": "research"
+    },
+    {
+      "source": "file:/Users/guybary/Documents/octocode-mcp/packages/octocode-awareness/bin/awareness.ts",
+      "at": "2026-07-08T15:29:53.776Z",
+      "stage": "research"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-08T15:26:14.955Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Apply NapMem active memory navigation ideas from arXiv 2607.05794v1 to packages/octocode-awareness"
+    },
+    {
+      "at": "2026-07-08T15:29:53.776Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "NapMem maps to Awareness most strongly as active query-time navigation over existing memory/query/reflection surfaces, not as a wholesale RL port.",
+      "claims": [
+        "Awareness already has structured memory recall/provenance/query/reflection primitives -> local src/memory.ts, src/db.ts, src/repo-context.ts, src/reflect.ts -> strong",
+        "Largest gap is learned or explicit navigation over memory granularities -> arXiv 2607.05794v1 plus local fixed command loop -> moderate",
+        "Embedding helpers exist but are not integrated into CLI getMemory; CLI warns semantic fallback -> local bin/awareness.ts + LSP refs -> strong"
+      ],
+      "sources": [
+        "file:/Users/guybary/Documents/octocode-mcp/packages/octocode-awareness/src/memory.ts",
+        "https://arxiv.org/html/2607.05794v1",
+        "file:/Users/guybary/Documents/octocode-mcp/packages/octocode-awareness/bin/awareness.ts"
+      ]
+    },
+    {
+      "at": "2026-07-08T15:30:25.891Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "Prototype deterministic active memory navigation for Awareness over existing recall/query/reflection surfaces; defer RL and raw-conversation storage."
+    }
+  ],
+  "final": {
+    "at": "2026-07-08T15:30:25.891Z",
+    "verdict": "worth-prototyping",
+    "decision": "Prototype First",
+    "summary": "Prototype deterministic active memory navigation for Awareness over existing recall/query/reflection surfaces; defer RL and raw-conversation storage."
+  },
+  "eval": null
+}

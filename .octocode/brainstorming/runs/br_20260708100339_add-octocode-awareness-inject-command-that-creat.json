@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260708100339_add-octocode-awareness-inject-command-that-creat",
+  "idea": "Add octocode-awareness inject command that creates/updates workspace .octocode/awareness folder with manifest, AGENTS.md, and CSV projections for gotchas, learning, memories, plans, and tasks",
+  "mode": "Validate",
+  "status": "active",
+  "stage": "clarify",
+  "cwd": "/Users/guybary/Documents/octocode-mcp",
+  "createdAt": "2026-07-08T10:03:39.405Z",
+  "updatedAt": "2026-07-08T10:03:39.406Z",
+  "surfacePlan": {
+    "local": "active: repo command must fit packages/octocode-awareness data model and build/mirror flow",
+    "web": "active: prior art for repo memory/rule files and project-local agent instructions",
+    "githubPackages": "light: only if web/local yields concrete reusable patterns"
+  },
+  "claims": [],
+  "sources": [],
+  "events": [
+    {
+      "at": "2026-07-08T10:03:39.405Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Add octocode-awareness inject command that creates/updates workspace .octocode/awareness folder with manifest, AGENTS.md, and CSV projections for gotchas, learning, memories, plans, and tasks"
+    }
+  ],
+  "final": null,
+  "eval": null
+}

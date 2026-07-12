@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260708195352_deepen-homeostatic-awareness-loop-with-neuroplas",
+  "idea": "Deepen Homeostatic Awareness Loop with neuroplasticity, nervous/immune/glymphatic/corpus mechanisms and update RFC/CLI-skill ergonomics",
+  "mode": "Validate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/octocode-mcp",
+  "createdAt": "2026-07-08T19:53:52.536Z",
+  "updatedAt": "2026-07-08T20:03:25.384Z",
+  "surfacePlan": {
+    "local": "active: existing HAL RFC and octocode-awareness skill/CLI docs",
+    "web": "active: neuroscience/neuroimmune/neuroplasticity primary sources",
+    "githubPackages": "skipped: prior product landscape already researched; use only if a new conflict appears",
+    "subagents": "skipped: user did not request subagents in this pass"
+  },
+  "claims": [
+    {
+      "claim": "Prediction-error and motor-adaptation sources support fall/feedback/update loops for reflect/verify -> high",
+      "at": "2026-07-08T19:56:11.849Z",
+      "stage": "research"
+    },
+    {
+      "claim": "Microglia/complement sources support immune-style tag-prune mechanisms for memory hygiene -> high",
+      "at": "2026-07-08T19:56:11.858Z",
+      "stage": "research"
+    },
+    {
+      "claim": "Glymphatic/lymphatic sources support explicit cleanup/drainage surfaces in the awareness organ model -> high",
+      "at": "2026-07-08T19:56:11.886Z",
+      "stage": "research"
+    },
+    {
+      "claim": "Allostatic/interoceptive/corpus sources support an intuitive organ-map UX for skill and CLI outputs -> medium-high",
+      "at": "2026-07-08T19:56:11.897Z",
+      "stage": "research"
+    }
+  ],
+  "sources": [
+    {
+      "source": "https://pubmed.ncbi.nlm.nih.gov/9054347/ https://www.annualreviews.org/content/journals/10.1146/annurev-neuro-060909-153135",
+      "at": "2026-07-08T19:56:11.849Z",
+      "stage": "research"
+    },
+    {
+      "source": "https://pubmed.ncbi.nlm.nih.gov/22632727/ https://pubmed.ncbi.nlm.nih.gov/18083105/ https://pubmed.ncbi.nlm.nih.gov/32029629/",
+      "at": "2026-07-08T19:56:11.858Z",
+      "stage": "research"
+    },
+    {
+      "source": "https://pubmed.ncbi.nlm.nih.gov/24136970/ https://www.nih.gov/news-events/nih-research-matters/brain-waste-clearance-system-shown-people-first-time https://pubmed.ncbi.nlm.nih.gov/26030524/",
+      "at": "2026-07-08T19:56:11.886Z",
+      "stage": "research"
+    },
+    {
+      "source": "https://affective-science.org/pubs/2015/barrett-simmons-nature-neuroscience-2015.pdf https://www.nature.com/articles/s41593-025-02087-x https://link.springer.com/article/10.1007/s11065-005-6252-y",
+      "at": "2026-07-08T19:56:11.897Z",
+      "stage": "research"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-08T19:53:52.536Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Deepen Homeostatic Awareness Loop with neuroplasticity, nervous/immune/glymphatic/corpus mechanisms and update RFC/CLI-skill ergonomics"
+    },
+    {
+      "at": "2026-07-08T19:56:11.849Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Neuroplasticity/passive memory is too weak a model; awareness needs error signals, reinforcement, homeostatic scaling, immune-style pruning, sleep cleanup, and corpus-like integration mapped to exact CLI surfaces.",
+      "claims": [
+        "Prediction-error and motor-adaptation sources support fall/feedback/update loops for reflect/verify -> high"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/9054347/ https://www.annualreviews.org/content/journals/10.1146/annurev-neuro-060909-153135"
+      ]
+    },
+    {
+      "at": "2026-07-08T19:56:11.858Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Microglia/complement literature supports a pruning gate: weak/unused/unsafe memory connections should be tagged for review or supersession, not silently carried forever.",
+      "claims": [
+        "Microglia/complement sources support immune-style tag-prune mechanisms for memory hygiene -> high"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/22632727/ https://pubmed.ncbi.nlm.nih.gov/18083105/ https://pubmed.ncbi.nlm.nih.gov/32029629/"
+      ]
+    },
+    {
+      "at": "2026-07-08T19:56:11.886Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Sleep/glymphatic and meningeal lymphatic evidence supports treating digest as report-first cleanup and drainage, not just summarization.",
+      "claims": [
+        "Glymphatic/lymphatic sources support explicit cleanup/drainage surfaces in the awareness organ model -> high"
+      ],
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/24136970/ https://www.nih.gov/news-events/nih-research-matters/brain-waste-clearance-system-shown-people-first-time https://pubmed.ncbi.nlm.nih.gov/26030524/"
+      ]
+    },
+    {
+      "at": "2026-07-08T19:56:11.897Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Allostasis/interoception/corpus evidence supports adding an organ map that explains awareness as sensing, integrating, acting, and regulating across agents.",
+      "claims": [
+        "Allostatic/interoceptive/corpus sources support an intuitive organ-map UX for skill and CLI outputs -> medium-high"
+      ],
+      "sources": [
+        "https://affective-science.org/pubs/2015/barrett-simmons-nature-neuroscience-2015.pdf https://www.nature.com/articles/s41593-025-02087-x https://link.springer.com/article/10.1007/s11065-005-6252-y"
+      ]
+    },
+    {
+      "at": "2026-07-08T20:03:25.383Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "Neuroplasticity/neuroimmune research supports making octocode-awareness an intuitive workspace organ: sensing, attention, error learning, memory tagging, immune pruning, sleep/glymphatic cleanup, corpus-like agent bridging, and compact projections. Updated the HAL RFC and source awareness skill reference so agents get the organ map through the skill today and future CLI attend/sleep outputs can expose organ_state."
+    }
+  ],
+  "final": {
+    "at": "2026-07-08T20:03:25.383Z",
+    "verdict": "worth-prototyping",
+    "decision": "Prototype First + Organ Map RFC/Skill Patch",
+    "summary": "Neuroplasticity/neuroimmune research supports making octocode-awareness an intuitive workspace organ: sensing, attention, error learning, memory tagging, immune pruning, sleep/glymphatic cleanup, corpus-like agent bridging, and compact projections. Updated the HAL RFC and source awareness skill reference so agents get the organ map through the skill today and future CLI attend/sleep outputs can expose organ_state."
+  },
+  "eval": null
+}

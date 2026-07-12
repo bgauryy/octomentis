@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260712090844_audit-planner-to-researcher-to-all-helpers-end-t",
+  "idea": "Audit planner to researcher to all helpers end-to-end for communication correctness, latency, parallelism, and researcher instructions",
+  "mode": "Validate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/code/octocode-research-agent",
+  "createdAt": "2026-07-12T09:08:44.477Z",
+  "updatedAt": "2026-07-12T09:27:01.612Z",
+  "surfacePlan": {
+    "local": "active",
+    "runtime_localhost_4000": "active",
+    "web": "skipped: repo-local runtime audit",
+    "remote": "skipped: local code is authority"
+  },
+  "claims": [
+    {
+      "claim": "parallelism works at 5/2 caps -> live events + source -> confirmed",
+      "at": "2026-07-12T09:26:52.670Z",
+      "stage": "research"
+    },
+    {
+      "claim": "latency dominated by model turns and oversized prompts -> live metrics + prompt sizes -> confirmed",
+      "at": "2026-07-12T09:26:52.670Z",
+      "stage": "research"
+    },
+    {
+      "claim": "Jira transport dropped POST body -> installed Ambassador data shape + source + live 400 -> confirmed",
+      "at": "2026-07-12T09:26:52.670Z",
+      "stage": "research"
+    },
+    {
+      "claim": "Jira fix works -> localhost 200 zero-result and one call -> confirmed",
+      "at": "2026-07-12T09:27:01.576Z",
+      "stage": "synthesize"
+    },
+    {
+      "claim": "helper static prompts reduced ~35-37% -> measured composers -> confirmed",
+      "at": "2026-07-12T09:27:01.576Z",
+      "stage": "synthesize"
+    }
+  ],
+  "sources": [
+    {
+      "source": "docs/AGENT_MCP_TOOL_RATING.md:140",
+      "at": "2026-07-12T09:26:52.670Z",
+      "stage": "research"
+    },
+    {
+      "source": "packages/wix-jira-mcp/src/infrastructure/jira-proxy.client.ts:402",
+      "at": "2026-07-12T09:26:52.670Z",
+      "stage": "research"
+    },
+    {
+      "source": "packages/octocode-research-service/src/agents/prompts/agents/helpers/helper-blocks.ts:112",
+      "at": "2026-07-12T09:27:01.576Z",
+      "stage": "synthesize"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-12T09:08:44.477Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Audit planner to researcher to all helpers end-to-end for communication correctness, latency, parallelism, and researcher instructions"
+    },
+    {
+      "at": "2026-07-12T09:26:52.670Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Live full-lane run took 157s; parallel cap 5 worked, planner retried schema, Jira dropped Ambassador data body, researcher inferred false overlap and truncated output",
+      "claims": [
+        "parallelism works at 5/2 caps -> live events + source -> confirmed",
+        "latency dominated by model turns and oversized prompts -> live metrics + prompt sizes -> confirmed",
+        "Jira transport dropped POST body -> installed Ambassador data shape + source + live 400 -> confirmed"
+      ],
+      "sources": [
+        "docs/AGENT_MCP_TOOL_RATING.md:140",
+        "packages/wix-jira-mcp/src/infrastructure/jira-proxy.client.ts:402"
+      ]
+    },
+    {
+      "at": "2026-07-12T09:27:01.576Z",
+      "type": "checkpoint",
+      "stage": "synthesize",
+      "summary": "Implemented transport repair, grounded planner, overlap/completeness rules, lane-local helper prompts; full tests green and post-fix localhost Jira flow 38.5s",
+      "claims": [
+        "Jira fix works -> localhost 200 zero-result and one call -> confirmed",
+        "helper static prompts reduced ~35-37% -> measured composers -> confirmed"
+      ],
+      "sources": [
+        "packages/octocode-research-service/src/agents/prompts/agents/helpers/helper-blocks.ts:112"
+      ]
+    },
+    {
+      "at": "2026-07-12T09:27:01.611Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "Ship verified transport/prompt fixes; next measure representative p50/p95 before changing caps, models, or timeouts"
+    }
+  ],
+  "final": {
+    "at": "2026-07-12T09:27:01.611Z",
+    "verdict": "worth-prototyping",
+    "decision": "Prototype First",
+    "summary": "Ship verified transport/prompt fixes; next measure representative p50/p95 before changing caps, models, or timeouts"
+  },
+  "eval": null
+}

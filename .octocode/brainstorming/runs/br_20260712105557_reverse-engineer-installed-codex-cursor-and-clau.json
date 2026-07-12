@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260712105557_reverse-engineer-installed-codex-cursor-and-clau",
+  "idea": "Reverse-engineer installed Codex, Cursor, and Claude Code agent flows to derive best practices for planner-researcher-helper communication, instructions, skills, and parallelism",
+  "mode": "Validate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/code/octocode-research-agent",
+  "createdAt": "2026-07-12T10:55:57.334Z",
+  "updatedAt": "2026-07-12T11:09:18.373Z",
+  "surfacePlan": {
+    "local_artifacts": "active",
+    "target_repo": "active-comparison",
+    "web": "fallback-only",
+    "changes": "none"
+  },
+  "claims": [
+    {
+      "claim": "All three use bounded fresh-context delegation, scoped instructions/skills, structured lifecycle hooks, and explicit coordination rather than shared hidden context.",
+      "at": "2026-07-12T11:09:18.266Z",
+      "stage": "research"
+    },
+    {
+      "claim": "The dominant opportunity is context/tool/instruction narrowing plus executable budget/deadline policy, not adding more parallelism.",
+      "at": "2026-07-12T11:09:18.301Z",
+      "stage": "evaluate"
+    },
+    {
+      "claim": "Do not redesign planner/helper contracts; keep typed handoffs and locked lanes, but make route selection shrink the researcher prompt/tool surface and enforce per-stage budgets.",
+      "at": "2026-07-12T11:09:18.337Z",
+      "stage": "decide"
+    }
+  ],
+  "sources": [
+    {
+      "source": "/Applications/ChatGPT.app/Contents/Resources/codex; /Applications/ChatGPT.app/Contents/Resources/app.asar; /Applications/Cursor.app/Contents/Resources/app/out/vs/workbench/workbench.glass.main.js; https://github.com/anthropics/claude-code",
+      "at": "2026-07-12T11:09:18.266Z",
+      "stage": "research"
+    },
+    {
+      "source": "localhost:4000 job job_8a3a8889-8118-401b-ab1b-345b498e5f08; packages/octocode-research-service/src/langgraph/research-node.ts; packages/octocode-research-service/src/agents/research/research.agent.ts; packages/octocode-research-service/src/config/index.ts",
+      "at": "2026-07-12T11:09:18.301Z",
+      "stage": "evaluate"
+    },
+    {
+      "source": "docs/AGENT_MCP_TOOL_RATING.md; packages/octocode-research-service/src/agents/prompts/sections/agent-communication.ts; packages/octocode-research-service/src/agents/contracts/dispatch-ledger.ts",
+      "at": "2026-07-12T11:09:18.337Z",
+      "stage": "decide"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-12T10:55:57.334Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Reverse-engineer installed Codex, Cursor, and Claude Code agent flows to derive best practices for planner-researcher-helper communication, instructions, skills, and parallelism"
+    },
+    {
+      "at": "2026-07-12T11:09:18.266Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Reverse-engineered Codex 0.144.0-alpha.4 and ChatGPT app 26.707.31428 bundles plus Cursor 3.9.16 using Octocode CLI structure/search/binary inspection; resolved Claude Code 2.1.205 through official package/docs and repository evidence.",
+      "claims": [
+        "All three use bounded fresh-context delegation, scoped instructions/skills, structured lifecycle hooks, and explicit coordination rather than shared hidden context."
+      ],
+      "sources": [
+        "/Applications/ChatGPT.app/Contents/Resources/codex; /Applications/ChatGPT.app/Contents/Resources/app.asar; /Applications/Cursor.app/Contents/Resources/app/out/vs/workbench/workbench.glass.main.js; https://github.com/anthropics/claude-code"
+      ]
+    },
+    {
+      "at": "2026-07-12T11:09:18.301Z",
+      "type": "checkpoint",
+      "stage": "evaluate",
+      "summary": "Localhost public React flow completed correctly in 100.2s, but researcher took 92.8s/6 turns and consumed 203,123 tokens after two empty search batches; all MCP servers initialized, and the researcher stable prompt receives combined server instructions.",
+      "claims": [
+        "The dominant opportunity is context/tool/instruction narrowing plus executable budget/deadline policy, not adding more parallelism."
+      ],
+      "sources": [
+        "localhost:4000 job job_8a3a8889-8118-401b-ab1b-345b498e5f08; packages/octocode-research-service/src/langgraph/research-node.ts; packages/octocode-research-service/src/agents/research/research.agent.ts; packages/octocode-research-service/src/config/index.ts"
+      ]
+    },
+    {
+      "at": "2026-07-12T11:09:18.337Z",
+      "type": "checkpoint",
+      "stage": "decide",
+      "summary": "Critical Architect: prompt-only scheduling is too permissive. Visionary Entrepreneur: preserve evidence quality while cutting time-to-first-evidence. Product: expose progress and use task-shaped fast paths. Converged on a narrow optimization program with measurable latency/token gates.",
+      "claims": [
+        "Do not redesign planner/helper contracts; keep typed handoffs and locked lanes, but make route selection shrink the researcher prompt/tool surface and enforce per-stage budgets."
+      ],
+      "sources": [
+        "docs/AGENT_MCP_TOOL_RATING.md; packages/octocode-research-service/src/agents/prompts/sections/agent-communication.ts; packages/octocode-research-service/src/agents/contracts/dispatch-ledger.ts"
+      ]
+    },
+    {
+      "at": "2026-07-12T11:09:18.372Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "Keep current typed planner-researcher-helper architecture. Prototype route-aware instruction/tool loading, simple-query planner bypass, bounded helper deadlines, and first-evidence evals before any wider architecture rewrite."
+    }
+  ],
+  "final": {
+    "at": "2026-07-12T11:09:18.372Z",
+    "verdict": "worth-prototyping",
+    "decision": "Narrow",
+    "summary": "Keep current typed planner-researcher-helper architecture. Prototype route-aware instruction/tool loading, simple-query planner bypass, bounded helper deadlines, and first-evidence evals before any wider architecture rewrite."
+  },
+  "eval": null
+}

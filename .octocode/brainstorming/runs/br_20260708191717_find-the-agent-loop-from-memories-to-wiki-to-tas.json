@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260708191717_find-the-agent-loop-from-memories-to-wiki-to-tas",
+  "idea": "Find the agent loop from memories to wiki to tasks to lessons, using brain/nature cycle analogies to reduce awareness bloat and discover better approaches",
+  "mode": "Generate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/octocode-mcp",
+  "createdAt": "2026-07-08T19:17:17.536Z",
+  "updatedAt": "2026-07-08T19:20:26.897Z",
+  "surfacePlan": {
+    "local": "active: fit existing octocode-awareness DB/views/hooks/refinements",
+    "web": "active: brain/nature cycles as design analogies",
+    "githubPackages": "skipped: concept architecture first; scan later if prototype survives"
+  },
+  "claims": [
+    {
+      "claim": "Awareness loop exists but lacks a regulating navigation/workboard cycle -> local docs and query output -> moderate",
+      "at": "2026-07-08T19:19:28.218Z",
+      "stage": "research"
+    },
+    {
+      "claim": "Best agent loop should split wake execution from sleep consolidation/projection, with forgetting and projection budgets -> web sources -> moderate",
+      "at": "2026-07-08T19:19:40.147Z",
+      "stage": "cross-pollinate"
+    },
+    {
+      "claim": "Build a read-only attend/workboard command before adding schema-heavy topic tracks or manual docs -> perspective review -> moderate",
+      "at": "2026-07-08T19:19:57.715Z",
+      "stage": "stress-test"
+    }
+  ],
+  "sources": [
+    {
+      "source": "packages/octocode-awareness/skills/octocode-awareness/references/full-flow.md:24",
+      "at": "2026-07-08T19:19:28.218Z",
+      "stage": "research"
+    },
+    {
+      "source": "packages/octocode-awareness/skills/octocode-awareness/references/data-model.md:23",
+      "at": "2026-07-08T19:19:28.218Z",
+      "stage": "research"
+    },
+    {
+      "source": ".octocode/MEMORY_NAVIGATION.md:11",
+      "at": "2026-07-08T19:19:28.218Z",
+      "stage": "research"
+    },
+    {
+      "source": "https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2019.00071/full",
+      "at": "2026-07-08T19:19:40.147Z",
+      "stage": "cross-pollinate"
+    },
+    {
+      "source": "https://www.frontiersin.org/journals/neural-circuits/articles/10.3389/fncir.2017.00061/full",
+      "at": "2026-07-08T19:19:40.147Z",
+      "stage": "cross-pollinate"
+    },
+    {
+      "source": "https://ecologyandsociety.org/vol27/iss3/art21/",
+      "at": "2026-07-08T19:19:40.147Z",
+      "stage": "cross-pollinate"
+    },
+    {
+      "source": "https://www.frontiersin.org/journals/behavioral-neuroscience/articles/10.3389/fnbeh.2021.647732/full",
+      "at": "2026-07-08T19:19:40.147Z",
+      "stage": "cross-pollinate"
+    },
+    {
+      "source": ".octocode/MEMORY_NAVIGATION.md:94",
+      "at": "2026-07-08T19:19:57.715Z",
+      "stage": "stress-test"
+    },
+    {
+      "source": "packages/octocode-awareness/src/repo-context.ts:642",
+      "at": "2026-07-08T19:19:57.715Z",
+      "stage": "stress-test"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-08T19:17:17.536Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Find the agent loop from memories to wiki to tasks to lessons, using brain/nature cycle analogies to reduce awareness bloat and discover better approaches"
+    },
+    {
+      "at": "2026-07-08T19:19:28.218Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Local awareness already has one canonical DB and surfaces for memory, tasks, refinements, signals, query, repo inject; current workspace has 211 active memories, 560 tasks, 43 open refinements, so bloat pressure is real.",
+      "claims": [
+        "Awareness loop exists but lacks a regulating navigation/workboard cycle -> local docs and query output -> moderate"
+      ],
+      "sources": [
+        "packages/octocode-awareness/skills/octocode-awareness/references/full-flow.md:24",
+        "packages/octocode-awareness/skills/octocode-awareness/references/data-model.md:23",
+        ".octocode/MEMORY_NAVIGATION.md:11"
+      ]
+    },
+    {
+      "at": "2026-07-08T19:19:40.147Z",
+      "type": "checkpoint",
+      "stage": "cross-pollinate",
+      "summary": "Brain/nature analogies converge on bounded cycles: active inference separates learning from past and action selection for future; sleep consolidates while forgetting/downscaling; adaptive cycles alternate accumulation with release/reorganization; stigmergy uses local environmental traces.",
+      "claims": [
+        "Best agent loop should split wake execution from sleep consolidation/projection, with forgetting and projection budgets -> web sources -> moderate"
+      ],
+      "sources": [
+        "https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2019.00071/full",
+        "https://www.frontiersin.org/journals/neural-circuits/articles/10.3389/fncir.2017.00061/full",
+        "https://ecologyandsociety.org/vol27/iss3/art21/",
+        "https://www.frontiersin.org/journals/behavioral-neuroscience/articles/10.3389/fnbeh.2021.647732/full"
+      ]
+    },
+    {
+      "at": "2026-07-08T19:19:57.715Z",
+      "type": "checkpoint",
+      "stage": "stress-test",
+      "summary": "Perspective review: Critical Architect rejected another storage layer; Product wanted one front door; Visionary kept the wake/sleep metaphor because it explains bloat control. Surviving MVP is read-only workboard+navigator first, projection pruning second.",
+      "claims": [
+        "Build a read-only attend/workboard command before adding schema-heavy topic tracks or manual docs -> perspective review -> moderate"
+      ],
+      "sources": [
+        ".octocode/MEMORY_NAVIGATION.md:94",
+        "packages/octocode-awareness/src/repo-context.ts:642"
+      ]
+    },
+    {
+      "at": "2026-07-08T19:20:26.896Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "Surviving loop: wake execution plus sleep consolidation/projection; prototype read-only attend/workboard packet with bloat budgets before schema-heavy topic tracks or manual docs."
+    }
+  ],
+  "final": {
+    "at": "2026-07-08T19:20:26.896Z",
+    "verdict": "worth-prototyping",
+    "decision": "Prototype First",
+    "summary": "Surviving loop: wake execution plus sleep consolidation/projection; prototype read-only attend/workboard packet with bloat budgets before schema-heavy topic tracks or manual docs."
+  },
+  "eval": null
+}

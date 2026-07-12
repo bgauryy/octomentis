@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260710083158_validate-and-sharpen-the-innovation-claim-for-a-",
+  "idea": "Validate and sharpen the innovation claim for a public technical post that introduces the Octocode research platform before Octocode Awareness",
+  "mode": "Validate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/octocode-mcp",
+  "createdAt": "2026-07-10T08:31:58.960Z",
+  "updatedAt": "2026-07-10T08:44:05.442Z",
+  "surfacePlan": {
+    "local": "active: runtime and post are source of truth",
+    "web": "active: primary papers and direct prior art",
+    "github_packages": "limited: product differentiation only",
+    "social": "skipped: weak evidence"
+  },
+  "claims": [
+    {
+      "claim": "Differentiation is the combination of evidence-first research, advisory file presence, selective exclusivity, explicit verification debt, bounded projections, and human-gated homeostatic learning -> local README/Awareness docs plus Beads/Brainclaw/OACP comparison -> moderate",
+      "at": "2026-07-10T08:35:34.839Z",
+      "stage": "research"
+    },
+    {
+      "claim": "Novelty is integration, not invention: Octocode MCP/CLI proof escalation plus Awareness advisory presence, selective exclusivity, durable verification debt, token-budgeted delivery, bounded projections, and human-gated learning -> local runtime + Agent Mail/Beads/Claude Teams/OACP/MAPE-K comparisons -> strong framing, moderate novelty",
+      "at": "2026-07-10T08:44:05.411Z",
+      "stage": "validate"
+    }
+  ],
+  "sources": [
+    {
+      "source": "README.md:14-18; docs/OCTOCODE_MCP.md:3-15; https://github.com/gastownhall/beads; https://brainclaw.dev; https://oacp.dev/docs/getting-started/overview/",
+      "at": "2026-07-10T08:35:34.839Z",
+      "stage": "research"
+    },
+    {
+      "source": "subagents: post_editorial, post_runtime_accuracy, post_novelty; local docs and primary prior-art URLs in POST.md",
+      "at": "2026-07-10T08:44:05.411Z",
+      "stage": "validate"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-10T08:31:58.960Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Validate and sharpen the innovation claim for a public technical post that introduces the Octocode research platform before Octocode Awareness"
+    },
+    {
+      "at": "2026-07-10T08:35:34.839Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Local docs support a two-plane story: Octocode establishes code truth through one MCP/CLI research engine; Awareness regulates continuity and coordination around that evidence. External scan shows shared memory, task graphs, claims, and agent mailboxes are crowded categories, so novelty must be framed as integration, not invention.",
+      "claims": [
+        "Differentiation is the combination of evidence-first research, advisory file presence, selective exclusivity, explicit verification debt, bounded projections, and human-gated homeostatic learning -> local README/Awareness docs plus Beads/Brainclaw/OACP comparison -> moderate"
+      ],
+      "sources": [
+        "README.md:14-18; docs/OCTOCODE_MCP.md:3-15; https://github.com/gastownhall/beads; https://brainclaw.dev; https://oacp.dev/docs/getting-started/overview/"
+      ]
+    },
+    {
+      "at": "2026-07-10T08:44:05.411Z",
+      "type": "checkpoint",
+      "stage": "validate",
+      "summary": "Three independent rechecks rate the revised article 9.1/10 editorial quality, 9.2/10 runtime accuracy, and 6.7/10 technical novelty with 9.1/10 innovation-claim credibility. The primitives are established; the evidence-to-continuity integration is the defensible wedge.",
+      "claims": [
+        "Novelty is integration, not invention: Octocode MCP/CLI proof escalation plus Awareness advisory presence, selective exclusivity, durable verification debt, token-budgeted delivery, bounded projections, and human-gated learning -> local runtime + Agent Mail/Beads/Claude Teams/OACP/MAPE-K comparisons -> strong framing, moderate novelty"
+      ],
+      "sources": [
+        "subagents: post_editorial, post_runtime_accuracy, post_novelty; local docs and primary prior-art URLs in POST.md"
+      ]
+    },
+    {
+      "at": "2026-07-10T08:44:05.442Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "Publish the narrowed technical claim: Octocode is the evidence-first MCP/CLI research plane; Awareness is the host-portable continuity plane. The contribution is their supervised, token-regulated integration—not invention of memory, tasks, mail, leases, reflection, or feedback control."
+    }
+  ],
+  "final": {
+    "at": "2026-07-10T08:44:05.442Z",
+    "verdict": "worth-prototyping",
+    "decision": "Narrow",
+    "summary": "Publish the narrowed technical claim: Octocode is the evidence-first MCP/CLI research plane; Awareness is the host-portable continuity plane. The contribution is their supervised, token-regulated integration—not invention of memory, tasks, mail, leases, reflection, or feedback control."
+  },
+  "eval": null
+}

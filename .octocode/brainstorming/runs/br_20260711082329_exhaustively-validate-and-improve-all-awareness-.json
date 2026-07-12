@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260711082329_exhaustively-validate-and-improve-all-awareness-",
+  "idea": "Exhaustively validate and improve all Awareness hooks, CLI-skill instructions, and features",
+  "mode": "Validate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/octocode-mcp",
+  "createdAt": "2026-07-11T08:23:29.538Z",
+  "updatedAt": "2026-07-11T09:00:07.480Z",
+  "surfacePlan": {
+    "local": "active: canonical repo runtime/docs/tests",
+    "web": "skipped: local-only contract audit",
+    "github_packages": "skipped: local checkout is authority"
+  },
+  "claims": [
+    {
+      "claim": "Local checkout is canonical -> AGENTS/package sources/tests -> strong",
+      "at": "2026-07-11T08:24:40.164Z",
+      "stage": "research"
+    },
+    {
+      "claim": "All 15 feature families now have implementation, CLI/skill guidance, and deterministic or held-out runtime evidence.",
+      "at": "2026-07-11T09:00:07.360Z",
+      "stage": "evaluation"
+    }
+  ],
+  "sources": [
+    {
+      "source": "packages/octocode-awareness/AGENTS.md",
+      "at": "2026-07-11T08:24:40.164Z",
+      "stage": "research"
+    },
+    {
+      "source": "packages/octocode-awareness tests and host matrix",
+      "at": "2026-07-11T09:00:07.360Z",
+      "stage": "evaluation"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-11T08:23:29.538Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Exhaustively validate and improve all Awareness hooks, CLI-skill instructions, and features"
+    },
+    {
+      "at": "2026-07-11T08:24:40.164Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Local-only audit active; hooks architect and CLI-product agents dispatched; parent owns full feature/eval matrix and mutations.",
+      "claims": [
+        "Local checkout is canonical -> AGENTS/package sources/tests -> strong"
+      ],
+      "sources": [
+        "packages/octocode-awareness/AGENTS.md"
+      ]
+    },
+    {
+      "at": "2026-07-11T09:00:07.360Z",
+      "type": "checkpoint",
+      "stage": "evaluation",
+      "summary": "Subagent and parent audits converged on compact/session semantics, Node-path portability, phantom path extraction, and non-executable attend.next; bounded fixes passed full coverage and live smokes.",
+      "claims": [
+        "All 15 feature families now have implementation, CLI/skill guidance, and deterministic or held-out runtime evidence."
+      ],
+      "sources": [
+        "packages/octocode-awareness tests and host matrix"
+      ]
+    },
+    {
+      "at": "2026-07-11T09:00:07.480Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "Ship the bounded lifecycle, hook portability, extractor parity, and agent-contract fixes; keep actual host runtime health explicitly unverified until a host reload executes hooks."
+    }
+  ],
+  "final": {
+    "at": "2026-07-11T09:00:07.480Z",
+    "verdict": "worth-prototyping",
+    "decision": "Narrow",
+    "summary": "Ship the bounded lifecycle, hook portability, extractor parity, and agent-contract fixes; keep actual host runtime health explicitly unverified until a host reload executes hooks."
+  },
+  "eval": null
+}

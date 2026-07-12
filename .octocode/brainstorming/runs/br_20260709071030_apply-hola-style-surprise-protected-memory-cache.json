@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "runId": "br_20260709071030_apply-hola-style-surprise-protected-memory-cache",
+  "idea": "Apply HOLA-style surprise/protected-memory cache to packages/octocode-awareness",
+  "mode": "Validate",
+  "status": "done",
+  "stage": "present",
+  "cwd": "/Users/guybary/Documents/octocode-mcp",
+  "createdAt": "2026-07-09T07:10:30.919Z",
+  "updatedAt": "2026-07-09T07:18:14.870Z",
+  "surfacePlan": {
+    "local": "active: repo-targeted octocode-awareness package",
+    "web": "active: arXiv HOLA paper and memory prior art",
+    "githubPackages": "light-active: adjacent agent memory/RAG/caching prior art"
+  },
+  "claims": [
+    {
+      "claim": "HOLA paper supports surprise-selected bounded exact memory over recency for linear attention -> arXiv 2607.02303 -> moderate/strong for model-layer, moderate transfer to app-layer",
+      "at": "2026-07-09T07:17:54.354Z",
+      "stage": "research"
+    },
+    {
+      "claim": "Best v0 is a derived read-only protected-memory ranking/view over memories+memory_refs feeding attend/queryAwareness, not schema/store replacement -> local source/docs/tests -> strong",
+      "at": "2026-07-09T07:17:54.411Z",
+      "stage": "local"
+    },
+    {
+      "claim": "Prototype success should use Recall@3/MRR@3, score health, scope-leak safety, and compact attend budget over existing tests -> local test suite -> strong",
+      "at": "2026-07-09T07:17:54.565Z",
+      "stage": "review"
+    }
+  ],
+  "sources": [
+    {
+      "source": "https://arxiv.org/html/2607.02303v1",
+      "at": "2026-07-09T07:17:54.354Z",
+      "stage": "research"
+    },
+    {
+      "source": "packages/octocode-awareness/src/memory.ts; packages/octocode-awareness/src/attend.ts; packages/octocode-awareness/docs/MEMORY_NAVIGATION.md",
+      "at": "2026-07-09T07:17:54.411Z",
+      "stage": "local"
+    },
+    {
+      "source": "packages/octocode-awareness/tests/memory-upgrades.test.ts; packages/octocode-awareness/tests/memory.test.ts; packages/octocode-awareness/tests/repo-context.test.ts",
+      "at": "2026-07-09T07:17:54.565Z",
+      "stage": "review"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-07-09T07:10:30.919Z",
+      "type": "start",
+      "stage": "clarify",
+      "summary": "Apply HOLA-style surprise/protected-memory cache to packages/octocode-awareness"
+    },
+    {
+      "at": "2026-07-09T07:17:54.354Z",
+      "type": "checkpoint",
+      "stage": "research",
+      "summary": "Paper/source and local architecture evidence converged: HOLA transfers as a bounded surprise/protected-memory heuristic, not a literal model-layer cache.",
+      "claims": [
+        "HOLA paper supports surprise-selected bounded exact memory over recency for linear attention -> arXiv 2607.02303 -> moderate/strong for model-layer, moderate transfer to app-layer"
+      ],
+      "sources": [
+        "https://arxiv.org/html/2607.02303v1"
+      ]
+    },
+    {
+      "at": "2026-07-09T07:17:54.411Z",
+      "type": "checkpoint",
+      "stage": "local",
+      "summary": "octocode-awareness already has canonical SQLite memories, memory_refs, FTS, novelty_score, decay/access/lexical scoring, optional semantic overlay, and attend evidence selection.",
+      "claims": [
+        "Best v0 is a derived read-only protected-memory ranking/view over memories+memory_refs feeding attend/queryAwareness, not schema/store replacement -> local source/docs/tests -> strong"
+      ],
+      "sources": [
+        "packages/octocode-awareness/src/memory.ts; packages/octocode-awareness/src/attend.ts; packages/octocode-awareness/docs/MEMORY_NAVIGATION.md"
+      ]
+    },
+    {
+      "at": "2026-07-09T07:17:54.565Z",
+      "type": "checkpoint",
+      "stage": "review",
+      "summary": "Perspective review converged on Prototype First: first prove recall/ranking lift with fixtures before RFC or implementation.",
+      "claims": [
+        "Prototype success should use Recall@3/MRR@3, score health, scope-leak safety, and compact attend budget over existing tests -> local test suite -> strong"
+      ],
+      "sources": [
+        "packages/octocode-awareness/tests/memory-upgrades.test.ts; packages/octocode-awareness/tests/memory.test.ts; packages/octocode-awareness/tests/repo-context.test.ts"
+      ]
+    },
+    {
+      "at": "2026-07-09T07:18:14.869Z",
+      "type": "finish",
+      "stage": "present",
+      "summary": "HOLA-style surprise memory is worth prototyping in octocode-awareness as a derived read-only protected-memory ranking/view feeding attend/queryAwareness, measured with recall fixtures before schema or store changes."
+    }
+  ],
+  "final": {
+    "at": "2026-07-09T07:18:14.869Z",
+    "verdict": "worth-prototyping",
+    "decision": "Prototype First",
+    "summary": "HOLA-style surprise memory is worth prototyping in octocode-awareness as a derived read-only protected-memory ranking/view feeding attend/queryAwareness, measured with recall fixtures before schema or store changes."
+  },
+  "eval": null
+}
