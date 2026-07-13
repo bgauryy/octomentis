@@ -43,6 +43,7 @@ import { installSkill } from '../installer.js';
 import { getSkillsHome } from '../home.js';
 import { bold, dim, green, yellow, red, cyan } from '../utils/colors.js';
 import { Spinner } from '../utils/spinner.js';
+import { shortPath as short } from '../utils/paths.js';
 
 // ─── Options ──────────────────────────────────────────────────────────────────
 
@@ -56,11 +57,6 @@ export interface CheckOptions {
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
-
-const HOME = process.env['HOME'] ?? '';
-function short(p: string): string {
-  return HOME ? p.replace(HOME, '~') : p;
-}
 
 function locationIcon(status: CheckedLocation['status']): string {
   switch (status) {

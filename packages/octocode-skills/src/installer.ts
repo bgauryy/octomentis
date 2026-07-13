@@ -80,7 +80,11 @@ function ensureParent(p: string): void {
 }
 
 function removeIfExists(p: string, force: boolean): 'removed' | 'present' | 'absent' {
-  if (!fs.existsSync(p)) return 'absent';
+  try {
+    fs.lstatSync(p); // lstat succeeds for broken symlinks; existsSync does not
+  } catch {
+    return 'absent';
+  }
   if (!force) return 'present';
   fs.rmSync(p, { recursive: true, force: true });
   return 'removed';
@@ -176,7 +180,7 @@ export function installSkill(params: InstallSkillParams): SkillInstallOutcome {
       const result = installToDest({
         sourcePath,
         destPath: homePath,
-        mode: mode === 'copy' ? 'copy' : 'copy', // home always copies (canonical)
+        mode: 'copy', // home always copies (canonical)
         force,
         label: 'home',
       });
@@ -189,12 +193,8 @@ export function installSkill(params: InstallSkillParams): SkillInstallOutcome {
             : 'failed';
       homeError = result.error;
     }
-  }
 
-  // Source for links is either the home copy or the custom path dir
-  const linkSource = customPath ? path.join(customPath, skillName) : homePath!;
-
-  // ── Step 2: Custom path (bypasses home) ────────────────────────────────────
+  // ── Step 2: Custom path (bypasses home) ──────────────────────────────────────────
 
   const links: LinkResult[] = [];
 
@@ -221,7 +221,7 @@ export function installSkill(params: InstallSkillParams): SkillInstallOutcome {
         continue;
       }
 
-        const effectiveMode = resolveEffectiveMode(mode, platform);
+      const effectiveMode = resolveEffectiveMode(mode, platform);
       if (effectiveMode === 'copy') {
         links.push(
           installToDest({ sourcePath, destPath: linkPath, mode: 'copy', force, label: platform })
@@ -247,8 +247,6 @@ export function installSkill(params: InstallSkillParams): SkillInstallOutcome {
       );
     }
   }
-
-  void linkSource; // used when needed; suppress unused warning
 
   return {
     skillName,

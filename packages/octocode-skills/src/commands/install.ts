@@ -23,6 +23,7 @@ import { getSkillsHome } from '../home.js';
 import { getSkillsEnvStatus, groupLabel, isGroupSatisfied } from '../env-params.js';
 import { Spinner } from '../utils/spinner.js';
 import { bold, dim, green, yellow, red, cyan } from '../utils/colors.js';
+import { shortPath } from '../utils/paths.js';
 
 // ─── Options ──────────────────────────────────────────────────────────────────
 
@@ -62,12 +63,6 @@ export interface InstallJsonResult {
   summary: { installed: number; skipped: number; failed: number };
 }
 
-// ─── Helpers ──────────────────────────────────────────────────────────────────
-
-const HOME_DIR = process.env['HOME'] ?? '';
-export function shortPath(p: string): string {
-  return HOME_DIR ? p.replace(HOME_DIR, '~') : p;
-}
 
 function statusIcon(status: string): string {
   if (status === 'installed' || status === 'linked') return green('✓');
@@ -88,7 +83,11 @@ export function runInstall(skillNames: string[], opts: InstallOptions): void {
   if (opts.all) {
     skills = listSkills();
     if (skills.length === 0) {
-      emit(opts.json, false, 'No bundled skills found.', [], { installed: 0, skipped: 0, failed: 0 });
+      if (opts.json) {
+        console.log(JSON.stringify({ success: false, error: 'No bundled skills found.', skills: [], summary: { installed: 0, skipped: 0, failed: 0 } }));
+      } else {
+        console.log(`\n  ${red('\u2717')}  No bundled skills found.\n`);
+      }
       process.exitCode = 1;
       return;
     }
@@ -366,18 +365,3 @@ export function runInstall(skillNames: string[], opts: InstallOptions): void {
   }
 }
 
-// ─── Helpers (used by other commands) ─────────────────────────────────────────
-
-function emit(
-  json: boolean,
-  success: boolean,
-  error: string,
-  skills: unknown[],
-  summary: { installed: number; skipped: number; failed: number }
-): void {
-  if (json) {
-    console.log(JSON.stringify({ success, error, skills, summary }));
-  } else {
-    console.log(`\n  ${red('✗')}  ${error}\n`);
-  }
-}

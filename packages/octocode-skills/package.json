@@ -11,7 +11,7 @@
     "pi",
     "skills"
   ],
-  "author": "Guy Bary <bgauryy@octocodeai.com>",
+  "author": "Guy Bary <bgaryy@octocodeai.com>",
   "homepage": "https://octocode.ai",
   "repository": {
     "type": "git",
@@ -25,8 +25,10 @@
     "octocode-skills": "./out/cli.js"
   },
   "main": "./out/index.js",
+  "types": "./out/index.d.ts",
   "exports": {
     ".": {
+      "types": "./out/index.d.ts",
       "import": "./out/index.js",
       "default": "./out/index.js"
     }
@@ -46,6 +48,7 @@
     "clean": "rm -rf out/",
     "lint": "tsc --noEmit -p tsconfig.json",
     "typecheck": "tsc --noEmit -p tsconfig.json",
+    "prepublishOnly": "node build.mjs",
     "test": "echo 'no tests yet'",
     "test:quiet": "echo 'no tests yet'",
     "verify": "yarn lint && yarn build"

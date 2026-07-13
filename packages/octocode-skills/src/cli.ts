@@ -46,6 +46,9 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
+// Injected at build time by esbuild define; tsc trusts the ambient declaration.
+declare const __PKG_VERSION__: string;
+
 import { runList } from './commands/list.js';
 import { runInstall } from './commands/install.js';
 import { runRemove } from './commands/remove.js';
@@ -181,7 +184,7 @@ async function main(): Promise<void> {
   const help = Boolean(flags['help'] ?? flags['h']);
 
   if (flags['version']) {
-    console.log('1.0.0');
+    console.log(__PKG_VERSION__);
     return;
   }
 

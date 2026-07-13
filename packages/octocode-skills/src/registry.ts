@@ -88,11 +88,15 @@ export function getBundledSkillsDir(): string {
   return findBundledSkillsDir();
 }
 
+let _skillsCache: SkillInfo[] | null = null;
+
 /**
  * List all bundled skills.
  * Only directories with a valid SKILL.md (name + description) are included.
+ * Result is memoized for the process lifetime — skills are static during a CLI run.
  */
 export function listSkills(): SkillInfo[] {
+  if (_skillsCache) return _skillsCache;
   const skillsDir = findBundledSkillsDir();
 
   if (!fs.existsSync(skillsDir)) return [];
@@ -126,7 +130,8 @@ export function listSkills(): SkillInfo[] {
     });
   }
 
-  return skills.sort((a, b) => a.name.localeCompare(b.name));
+  _skillsCache = skills.sort((a, b) => a.name.localeCompare(b.name));
+  return _skillsCache;
 }
 
 /**

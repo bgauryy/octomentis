@@ -18,6 +18,7 @@ import { getSkillsHome } from '../home.js';
 import { getPlatformSkillsDir, parsePlatforms } from '../platforms.js';
 import type { Platform } from '../platforms.js';
 import { bold, dim, green, yellow, red, cyan } from '../utils/colors.js';
+import { shortPath } from '../utils/paths.js';
 
 export interface RemoveOptions {
   all: boolean;
@@ -31,10 +32,6 @@ type RemoveResult = { target: string; path: string; status: 'removed' | 'skipped
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-const HOME_DIR = process.env['HOME'] ?? '';
-function shortPath(p: string): string {
-  return HOME_DIR ? p.replace(HOME_DIR, '~') : p;
-}
 
 function removeEntry(entryPath: string): { ok: boolean; error?: string } {
   try {

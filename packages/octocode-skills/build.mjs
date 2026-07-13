@@ -8,11 +8,14 @@
  */
 
 import * as esbuild from 'esbuild';
+import { execSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, 'package.json'), 'utf-8'));
 
 // ─── Clean ────────────────────────────────────────────────────────────────────
 
@@ -75,6 +78,7 @@ await esbuild.build({
   entryPoints: ['src/cli.ts'],
   outfile: 'out/cli.js',
   banner: { js: '#!/usr/bin/env node' },
+  define: { __PKG_VERSION__: JSON.stringify(pkg.version) },
 });
 
 await esbuild.build({
@@ -85,5 +89,18 @@ await esbuild.build({
 
 // Make CLI executable
 fs.chmodSync(path.join(__dirname, 'out', 'cli.js'), 0o755);
+
+// ─── TypeScript declarations ──────────────────────────────────────────────────
+// esbuild handles JS; tsc adds .d.ts so TypeScript consumers get full types.
+
+try {
+  execSync('npx tsc --project tsconfig.json --emitDeclarationOnly', {
+    cwd: __dirname,
+    stdio: 'inherit',
+  });
+  console.log('✓  TypeScript declarations emitted → out/');
+} catch {
+  console.warn('⚠  tsc --emitDeclarationOnly failed — declarations skipped (publish will lack types)');
+}
 
 console.log('✓  @octocodeai/skills built → out/');
