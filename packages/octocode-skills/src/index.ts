@@ -17,6 +17,10 @@ export type { Platform } from './platforms.js';
 export { installSkill } from './installer.js';
 export type { InstallMode, InstallSkillParams, SkillInstallOutcome, LinkResult } from './installer.js';
 
+// Remove — uninstall skills programmatically
+export { runRemove } from './commands/remove.js';
+export type { RemoveOptions } from './commands/remove.js';
+
 // Checker — verify installation status
 export {
   checkSkill,

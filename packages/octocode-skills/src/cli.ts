@@ -48,6 +48,7 @@
 
 import { runList } from './commands/list.js';
 import { runInstall } from './commands/install.js';
+import { runRemove } from './commands/remove.js';
 import { runInfo } from './commands/info.js';
 import { runCheck } from './commands/check.js';
 import { bold, dim, cyan } from './utils/colors.js';
@@ -105,6 +106,7 @@ ${bold('Usage')}
 ${bold('Commands')}
   list                    List all skills with install status
   install <name>...       Install one or more skills  ${dim('(override by default)')}
+  remove  <name>...       Remove a skill — home copy + all platform links
   check  [<name>...]      Verify installations — home, platform links, broken symlinks
   info   <name>           Show full SKILL.md content
 
@@ -120,9 +122,14 @@ ${bold('Install options')}
                           ${dim('opencode | copilot | gemini | common | all')}
   --workspace, --repo     Also link into <cwd>/.agents/skills/
   --path <dir>            Install directly to <dir>  ${dim('(skips canonical home)')}
-  --mode copy|symlink     Mode  ${dim('[default: symlink]')}
+  --mode copy|symlink|hybrid  Mode  ${dim('[default: symlink · hybrid = copy for claude, symlink for others]')}
   --keep                  ${dim('Preserve existing — skip overwrite')}  ${dim('[default: override]')}
   --dry-run               Preview without writing
+
+${bold('Remove options')}
+  --all                   Remove all installed skills
+  --platform <p>          Remove only the specified platform link(s)  ${dim('(home kept)')}
+  --dry-run               Preview without deleting
 
 ${bold('Check options')}
   --platform <p>          Check specific platforms only
@@ -142,6 +149,10 @@ ${bold('Examples')}
   octocode-skills install octocode-research --platform pi --workspace
   octocode-skills install octocode-research --path ~/.claude-desktop/skills
   octocode-skills install octocode-research --keep
+  octocode-skills install octocode-research --platform claude --mode hybrid
+  octocode-skills remove octocode-research
+  octocode-skills remove octocode-research --platform pi
+  octocode-skills remove --all --dry-run
   octocode-skills check
   octocode-skills check --fix
   octocode-skills check octocode-research --platform pi
@@ -155,6 +166,7 @@ ${bold('Installation model')}
 ${bold('Agent workflow')}
   ${cyan('octocode-skills list --json')}            discover skills + install status
   ${cyan('octocode-skills install <n> --json')}     install and parse outcome
+  ${cyan('octocode-skills remove <n> --json')}      uninstall and parse outcome
   ${cyan('octocode-skills check --json')}           verify all installations
   ${cyan('octocode-skills info <n> --json')}        read SKILL.md content
 `);
@@ -217,7 +229,7 @@ async function main(): Promise<void> {
     case 'install': {
       const skillNames = positional.filter((a) => !a.startsWith('-'));
       const rawMode = flags['mode'];
-      const mode = rawMode === 'copy' ? 'copy' : 'symlink';
+      const mode = rawMode === 'copy' ? 'copy' : rawMode === 'hybrid' ? 'hybrid' : 'symlink';
       const rawPlatform = flags['platform'];
       const platform = typeof rawPlatform === 'string' ? rawPlatform : null;
       const rawPath = flags['path'];
@@ -231,6 +243,21 @@ async function main(): Promise<void> {
         mode,
         // --keep = preserve existing; default is override
         keep: Boolean(flags['keep']),
+        dryRun: Boolean(flags['dry-run']),
+        json,
+      });
+      break;
+    }
+
+    // ── remove ─────────────────────────────────────────────────────────────
+    case 'remove': {
+      const skillNames = positional.filter((a) => !a.startsWith('-'));
+      const rawPlatform = flags['platform'];
+      const platform = typeof rawPlatform === 'string' ? rawPlatform : null;
+
+      runRemove(skillNames, {
+        all: Boolean(flags['all']),
+        platform,
         dryRun: Boolean(flags['dry-run']),
         json,
       });

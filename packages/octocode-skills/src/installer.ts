@@ -22,7 +22,15 @@ const isWindows = os.platform() === 'win32';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
-export type InstallMode = 'copy' | 'symlink';
+/** copy = always copy, symlink = always symlink, hybrid = copy for claude targets, symlink for all others */
+export type InstallMode = 'copy' | 'symlink' | 'hybrid';
+
+/** Resolve the effective write mode for a specific platform when mode is hybrid */
+function resolveEffectiveMode(mode: InstallMode, platform: string): 'copy' | 'symlink' {
+  if (mode === 'hybrid' && (platform === 'claude' || platform === 'claude-desktop')) return 'copy';
+  if (mode === 'copy') return 'copy';
+  return 'symlink';
+}
 
 export type LinkStatus = 'linked' | 'skipped' | 'failed';
 
@@ -213,9 +221,16 @@ export function installSkill(params: InstallSkillParams): SkillInstallOutcome {
         continue;
       }
 
-      links.push(
-        createLink({ targetPath: homePath, linkPath, label: platform, force })
-      );
+        const effectiveMode = resolveEffectiveMode(mode, platform);
+      if (effectiveMode === 'copy') {
+        links.push(
+          installToDest({ sourcePath, destPath: linkPath, mode: 'copy', force, label: platform })
+        );
+      } else {
+        links.push(
+          createLink({ targetPath: homePath, linkPath, label: platform, force })
+        );
+      }
     }
   }
 
